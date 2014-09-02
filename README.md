@@ -1,4 +1,4 @@
 CSCE4410-Fall2014
 =================
 
-Software Development I, Mobile App
+Software Development I, Mobile Application
