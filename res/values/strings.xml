@@ -4,5 +4,6 @@
     <string name="app_name">"Meal Tracker "</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+	<string name="welcome">Welcome!</string>
+	<string name="IMGdesc">IMG_Here</string>
 </resources>
