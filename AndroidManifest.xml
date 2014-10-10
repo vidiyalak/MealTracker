@@ -38,6 +38,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.mealtracker.FirstActivity" />
         </activity>
+        <activity
+            android:name=".ThirdActivity"
+            android:label="@string/title_activity_third"
+            android:parentActivityName=".SecondActivity" >
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.mealtracker.SecondActivity" />
+        </activity>
+        <activity
+            android:name=".ForthActivity"
+            android:label="@string/title_activity_forth"
+            android:parentActivityName=".ThirdActivity" >
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.mealtracker.ThirdActivity" />
+        </activity>
     </application>
 
 </manifest>
