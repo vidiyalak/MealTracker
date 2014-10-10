@@ -2,9 +2,18 @@
 <resources>
 
     <string name="app_name">"Meal Tracker "</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="gender">Gender</string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
     <string name="title_activity_first">First Page</string>
     <string name="title_activity_second">Second Page</string>
+=======
+    <string name="title_activity_third">ThirdActivity</string>
+    <string name="title_activity_forth">ForthActivity</string>
+    <string name="tall">How tall are you?</string>
+    <string name="weight">How much do you weight?</string>
+    <string name="next">Next</string>
+    
+>>>>>>> development
 
 </resources>
