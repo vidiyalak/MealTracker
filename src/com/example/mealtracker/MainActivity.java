@@ -39,7 +39,7 @@ public class MainActivity extends Activity implements OnClickListener{
     }
     @Override
     public void onClick(View v) {
-        Intent page2=new Intent(MainActivity.this, /*MainActivity2*/.class); //Next button goes to page 2 -John
+        Intent page2=new Intent(MainActivity.this, FirstActivity.class); //Next button goes to page 2 -John
         startActivity(page2);
     }
 }
