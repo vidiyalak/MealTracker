@@ -6,16 +6,15 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.widget.EditText;
 
-public class MainActivity extends Activity implements OnClickListener{
+
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
     }
 
 
@@ -37,9 +36,10 @@ public class MainActivity extends Activity implements OnClickListener{
         }
         return super.onOptionsItemSelected(item);
     }
-    @Override
-    public void onClick(View v) {
-        Intent page2=new Intent(MainActivity.this, FirstActivity.class); //Next button goes to page 2 -John
-        startActivity(page2);
+    
+    public void sendMessage(View view)
+    {
+    Intent intent = new Intent(this, FirstActivity.class);    
+    startActivity(intent);
     }
 }

@@ -25,7 +25,7 @@
         <activity
             android:name=".FirstActivity"
             android:label="@string/title_activity_first"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.mealtracker.MainActivity" />
@@ -39,27 +39,28 @@
                 android:value="com.example.mealtracker.FirstActivity" />
         </activity>
         <activity
-
             android:name=".ThirdActivity"
             android:label="@string/title_activity_third"
             android:parentActivityName=".SecondActivity" >
             <meta-data
-
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.mealtracker.SecondActivity" />
-
-              
-
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mealtracker.SecondActivity" />
         </activity>
         <activity
-            android:name=".ForthActivity"
-            android:label="@string/title_activity_forth"
+            android:name=".FourthActivity"
+            android:label="@string/title_activity_fourth"
             android:parentActivityName=".ThirdActivity" >
             <meta-data
-
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.mealtracker.ThirdActivity" />
-
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mealtracker.ThirdActivity" />
+        </activity>
+        <activity
+            android:name=".FifthActivity"
+            android:label="@string/title_activity_fifth"
+            android:parentActivityName=".FourthActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mealtracker.FourthActivity" />
         </activity>
     </application>
 

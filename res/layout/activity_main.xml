@@ -18,7 +18,7 @@
         android:textSize="24sp" />
 
     <ImageButton
-        android:contentDescription="@string/IMGdesc"
+        
         android:id="@+id/imageButton3"
         android:layout_width="180dp"
         android:layout_height="180dp"
@@ -27,7 +27,7 @@
         android:background="@drawable/burger27" />
 
     <ImageButton
-        android:contentDescription="@string/IMGdesc" <!--Next button - John -->
+        
         android:id="@+id/welcome_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,11 +36,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="74dp"
         android:src="@drawable/next_sq" 
-        android:onClick="onClick"/>
-        
+        android:onClick="sendMessage"/>        
 
     <ImageButton
-        android:contentDescription="@string/IMGdesc" <!--Skip button - John -->
+        
         android:id="@+id/welcome_skip_bttn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

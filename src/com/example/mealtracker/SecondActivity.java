@@ -1,12 +1,18 @@
 package com.example.mealtracker;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.RadioButton;
 
 public class SecondActivity extends Activity {
 
+	SharedPreferences settings;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -31,4 +37,40 @@ public class SecondActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	public void onRadioButtonClicked(View view){
+		settings = PreferenceManager.getDefaultSharedPreferences(this);
+	    SharedPreferences.Editor editor = settings.edit();
+	    
+		boolean checked = ((RadioButton) view).isChecked();		
+		String str = null;
+		switch(view.getId()){
+			case R.id.radio0:
+				if(checked)
+					str = "sedentary";				
+				break;
+			case R.id.radio1:
+				if(checked)
+					str = "light";				
+				break;
+			case R.id.radio2:
+				if(checked)
+					str = "moderate";				
+				break;
+			case R.id.radio3:
+				if(checked)
+					str = "active";				
+				break;
+		}	
+		editor.putString("activitylevel", str);
+		editor.commit();
+		Intent intent = new Intent(this, ThirdActivity.class);		
+		startActivity(intent);
+	}
+	
+	public void sendMessage(View view)
+    {
+    Intent intent = new Intent(this, ThirdActivity.class);    
+    startActivity(intent);
+    }
 }
