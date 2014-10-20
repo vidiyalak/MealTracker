@@ -23,7 +23,6 @@
             </intent-filter>
         </activity>
         <activity
-<<<<<<< HEAD
             android:name=".FirstActivity"
             android:label="@string/title_activity_first"
             android:parentActivityName=".MainActivity" >
@@ -40,32 +39,28 @@
                 android:value="com.example.mealtracker.FirstActivity" />
         </activity>
         <activity
-=======
->>>>>>> development
             android:name=".ThirdActivity"
             android:label="@string/title_activity_third"
             android:parentActivityName=".SecondActivity" >
             <meta-data
-<<<<<<< HEAD
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.mealtracker.SecondActivity" />
-=======
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.mealtracker.SecondActivity" />
->>>>>>> development
         </activity>
         <activity
-            android:name=".ForthActivity"
-            android:label="@string/title_activity_forth"
+            android:name=".FourthActivity"
+            android:label="@string/title_activity_fourth"
             android:parentActivityName=".ThirdActivity" >
             <meta-data
-<<<<<<< HEAD
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.mealtracker.ThirdActivity" />
-=======
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.mealtracker.ThirdActivity" />
->>>>>>> development
+        </activity>
+        <activity
+            android:name=".FifthActivity"
+            android:label="@string/title_activity_fifth"
+            android:parentActivityName=".FourthActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mealtracker.FourthActivity" />
         </activity>
     </application>
 
