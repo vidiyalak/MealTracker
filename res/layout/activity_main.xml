@@ -19,7 +19,6 @@
 	    android:layout_alignParentTop="true" 
 	    android:id="@+id/textView1"/>
 
-<<<<<<< HEAD
 	<Button android:background="#E0E0E0" 
 	    android:layout_height="wrap_content" 
 	    android:layout_width="wrap_content" 
@@ -29,38 +28,6 @@
 	    android:layout_below="@+id/textView1" 
 	    android:layout_alignRight="@+id/textView1" 
 	    android:layout_alignLeft="@+id/textView1"/>
-=======
-    <ImageButton
-        
-        android:id="@+id/imageButton3"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/burger27" />
-
-    <ImageButton
-        
-        android:id="@+id/welcome_next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageButton3"
-        android:layout_alignStart="@+id/imageButton3"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="74dp"
-        android:src="@drawable/next_sq" 
-        android:onClick="sendMessage"/>        
-
-    <ImageButton
-        
-        android:id="@+id/welcome_skip_bttn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/imageButton3"
-        android:layout_alignEnd="@+id/imageButton3"
-        android:layout_alignTop="@+id/welcome_next"
-        android:src="@drawable/skip_sq" />
->>>>>>> origin/master
 
 	<Button android:background="#00B82E" 
 	    android:layout_height="wrap_content" 
