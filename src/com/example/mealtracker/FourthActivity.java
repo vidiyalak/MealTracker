@@ -1,5 +1,7 @@
 package com.example.mealtracker;
 
+
+
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,25 +10,25 @@ import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.RadioButton;
+import android.widget.EditText;
 import android.widget.SeekBar;
-import android.widget.TextView;
 import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.TextView;
 
-public class ThirdActivity extends Activity {	
+public class FourthActivity extends Activity {
+	public final static String WEIGHT_VALUE = "com.example.mealtracker.WEIGHTMESSAGE";
 	SharedPreferences settings;
-	private SeekBar ageBar;
-	private TextView ageText;
-	int tempAge;//to pass the age value from seek bar to fifth activity for calorie calculations
-	String str;
+	private SeekBar heightBar, weightBar;
+	private TextView heightText, weightText;
+	private int tempHeight;//to store value to pass to the fifth activity with shared preferences
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_third);
+		setContentView(R.layout.activity_fourth);		
 		
-		ageBar = (SeekBar)findViewById(R.id.ageSeekBar); // make seek bar object
-        //PRICEbar.setOnSeekBarChangeListener(this); 
-        ageBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+		//create listener for seekbar for height
+		heightBar = (SeekBar)findViewById(R.id.heightSeekBar); // make seek bar object        
+        heightBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
@@ -44,17 +46,18 @@ public class ThirdActivity extends Activity {
             public void onProgressChanged(SeekBar seekBar, int progress,
                     boolean fromUser) {
                 // TODO Auto-generated method stub
-                ageText = (TextView)findViewById(R.id.ageTextView);
-                ageText.setText("Age:: " + progress);
-                tempAge = progress;
+                heightText = (TextView)findViewById(R.id.heightTextView);
+                heightText.setText("Height:: " + progress);
+                tempHeight = progress;
             }
-        });        
+        });       
+      
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.third, menu);
+		getMenuInflater().inflate(R.menu.fourth, menu);
 		return true;
 	}
 
@@ -70,33 +73,18 @@ public class ThirdActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	public void onRadioButtonClicked(View view){
+	public void sendMessage(View view)
+	{		
+		Intent intent = new Intent(this, FifthActivity.class);		
+		
+		EditText editText = (EditText)findViewById(R.id.editWeightText);
+		int tempWeight = Integer.parseInt(editText.getText().toString());		
+		
 		settings = PreferenceManager.getDefaultSharedPreferences(this);
 	    SharedPreferences.Editor editor = settings.edit();
-	    
-		boolean checked = ((RadioButton) view).isChecked();				
-		switch(view.getId()){
-			case R.id.radio0:
-				if(checked)
-					str = "male";
-				editor.putString("gender", "male");
-				break;
-			case R.id.radio1:
-				if(checked)
-					str = "female";
-				editor.putString("gender", "female");
-				break;
-		}	
-		editor.commit();		
+	    editor.putInt("height", tempHeight);
+	    editor.putInt("weight", tempWeight);
+	    editor.commit();
+		startActivity(intent);		
 	}
-	
-	public void sendMessage(View view)
-    {
-    Intent intent = new Intent(this, FourthActivity.class);      
-    settings = PreferenceManager.getDefaultSharedPreferences(this);
-    SharedPreferences.Editor editor = settings.edit();
-    editor.putInt("age", tempAge);
-    editor.commit();
-    startActivity(intent);
-    }
 }

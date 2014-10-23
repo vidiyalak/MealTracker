@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">"Meal Tracker "</string>
-    <string name="gender">Gender</string>
+    <string name="app_name">"Meal Tracker "</string>    
+    <string name="welcome">"Welcome"</string>
+    <string name="next">"Next"</string>
+    <string name="gender">"Gender"</string>
+    <string name="weight">"Weight (in pounds)"</string>
+    <string name="tall">"Height (in inches)"</string>
+    <string name="age">"What is your age?"</string>
+    <string name="active">"How active are you?"</string>
+    <string name="activityLevel1">"Sedentary\nLittle or no exercise"</string>
+    <string name="activityLevel2">"Lightly active\nExercise or sports 1 to 3 times a week"</string>
+    <string name="activityLevel3">"Moderately active\nExercise or sports 3 to 5 times a week"</string>
+    <string name="activityLevel4">"Very active\nExercise or sports 6 to 7 times a week"</string>
+    <string name="hello_world">Hello world!</string> 
     <string name="action_settings">Settings</string>
-<<<<<<< HEAD
     <string name="title_activity_first">First Page</string>
     <string name="title_activity_second">Second Page</string>
-=======
-    <string name="title_activity_third">ThirdActivity</string>
-    <string name="title_activity_forth">ForthActivity</string>
-    <string name="tall">How tall are you?</string>
-    <string name="weight">How much do you weight?</string>
-    <string name="next">Next</string>
-    
->>>>>>> development
+    <string name="title_activity_third">Third Page</string>
+    <string name="title_activity_fourth">FourthActivity</string>
+    <string name="title_activity_fifth">FifthActivity</string>
 
 </resources>
