@@ -18,9 +18,12 @@ public class FifthActivity extends Activity {
 		//to get values stored from previous activities
 		SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
 		String getGender = settings.getString("gender", "You did not select anything");
+		String getGoal = settings.getString("goal", "You did not select anything");
 		int getAge = settings.getInt("age", 0);
 		int getHeight = settings.getInt("height", 0);
 		int getWeight = settings.getInt("weight", 0);
+		int getLoseWeightAmount = settings.getInt("loseWeightAmount", -1);
+		int getGainWeightAmount = settings.getInt("gainWeightAmount", -1);
 		String getActivityLevel = settings.getString("activitylevel", "Nothing provided");
 		// Get the message from the intent
 	    //Intent intent = getIntent();
@@ -28,7 +31,7 @@ public class FifthActivity extends Activity {
 	    //String message1 = intent.getStringExtra(ThirdActivity.GENDER_VALUE);
 	    //send the Weight Value from the fourth
 		
-		double caloriesRequired = calculateCalories(getAge, getWeight, getHeight, getGender, getActivityLevel);
+		double caloriesRequired = calculateCalories(getAge, getWeight, getHeight, getGender, getActivityLevel, getLoseWeightAmount, getGainWeightAmount, getGoal);
 		
 		/*Random test cases. I just left it here so I can debug stuff later if needed
 	    TextView textView = (TextView) findViewById(R.id.textView1);
@@ -53,8 +56,7 @@ public class FifthActivity extends Activity {
 	    */
 	    TextView textView5 = (TextView) findViewById(R.id.textView1);
 	    //textView5.setTextSize(10);
-	    textView5.setText("You require: " + Math.round(caloriesRequired) + " calories.");
-	    
+	    textView5.setText("You require: " + Math.round(caloriesRequired) + " calories.");	    
 	    
 	}
 
@@ -78,10 +80,43 @@ public class FifthActivity extends Activity {
 	}	
 	
 	//to calculate the amount of calories required
-		private double calculateCalories(int age, int weight, int height, String gender, String activityLevel)
+		private double calculateCalories(int age, int weight, int height, String gender, String activityLevel, int loseWeightAmount, int gainWeightAmount, String goal)
 		{
 			double bmr = 10;//store the basal metabolic rate
 			double rate = 10;//to multiply bmr by to get calorie value
+			double loseAmount = 0;
+			double gainAmount = 0;
+			if(loseWeightAmount == -1)
+			{
+				loseAmount = 0;//since no lose weight amount is given , ie, user does not want to lose weight
+			}
+			else
+			{
+				loseAmount = ((loseWeightAmount / 2.0) * 3500) / 7;
+			}
+			
+			if(gainWeightAmount == -1)
+			{
+				gainAmount = 0;//since no gain weight amount is given , ie, user does not want to gain weight
+			}
+			else
+			{
+				gainAmount = ((gainWeightAmount / 2.0) * 3500) / 7;
+			}
+			
+			if(goal.equals("lose"))
+			{
+				gainAmount = 0;
+			}
+			else if(goal.equals("gain"))
+			{
+				loseAmount = 0;
+			}
+			else if(goal.equals("maintain"))
+			{
+				loseAmount = 0;
+				gainAmount = 0;
+			}
 			
 			if(gender.equals("male"))
 			{
@@ -100,7 +135,7 @@ public class FifthActivity extends Activity {
 			else if(activityLevel.equals("active"))
 				rate = 1.725;
 			
-			return bmr * rate;
+			return bmr * rate - loseAmount + gainAmount;
 			//return 0;
 		}
 }

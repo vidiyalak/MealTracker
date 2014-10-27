@@ -62,6 +62,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.mealtracker.FourthActivity" />
         </activity>
+        <activity
+            android:name=".LoseWeight"
+            android:label="@string/title_activity_lose_weight"
+            android:parentActivityName=".FirstActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mealtracker.FirstActivity" />
+        </activity>
+        <activity
+            android:name=".GainWeight"
+            android:label="@string/title_activity_gain_weight"
+            android:parentActivityName=".FirstActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mealtracker.FirstActivity" />
+        </activity>
     </application>
 
 </manifest>

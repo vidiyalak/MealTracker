@@ -6,8 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.mealtracker.FirstActivity" >
-
+    tools:context="com.example.mealtracker.LoseWeight" >
+    
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -15,22 +15,22 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:text="What is your goal?" />
+        android:text="How much do you want to lose per week?" />
 
     <RadioGroup
         android:id="@+id/radioGroup1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView1"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="40dp" >
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" >
 
         <RadioButton
             android:id="@+id/radio0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="Lose Weight" />
+            android:text="0.5 lbs" />
 
         <RadioButton
             android:id="@+id/radio1"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:onClick="onRadioButtonClicked"
-            android:text="Maintain Weight" />
+            android:text="1 lb" />
 
         <RadioButton
             android:id="@+id/radio2"
@@ -46,7 +46,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:onClick="onRadioButtonClicked"
-            android:text="Gain Weight" />
+            android:text="1.5 lb" />
+        
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="2 lb" />
+        
     </RadioGroup>
 
 </RelativeLayout>
