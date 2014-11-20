@@ -20,7 +20,9 @@ public class FifthActivity extends Activity {
 		String getGender = settings.getString("gender", "You did not select anything");
 		String getGoal = settings.getString("goal", "You did not select anything");
 		int getAge = settings.getInt("age", 0);
-		int getHeight = settings.getInt("height", 0);
+		int getHeightFeet = settings.getInt("heightFeet", 0);
+		int getHeightInch = settings.getInt("heightInch", 0);
+		int getHeight = (getHeightFeet * 12) + getHeightInch;
 		int getWeight = settings.getInt("weight", 0);
 		int getLoseWeightAmount = settings.getInt("loseWeightAmount", -1);
 		int getGainWeightAmount = settings.getInt("gainWeightAmount", -1);

@@ -6,7 +6,7 @@
     <string name="next">"Next"</string>
     <string name="gender">"Gender"</string>
     <string name="weight">"Weight (in pounds)"</string>
-    <string name="tall">"Height (in inches)"</string>
+    <string name="tall">"Height (feet and inches)"</string>
     <string name="age">"What is your age?"</string>
     <string name="active">"How active are you?"</string>
     <string name="activityLevel1">"Sedentary\nLittle or no exercise"</string>

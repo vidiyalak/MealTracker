@@ -25,7 +25,7 @@ public class FourthActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_fourth);		
-		
+		/*
 		//create listener for seekbar for height
 		heightBar = (SeekBar)findViewById(R.id.heightSeekBar); // make seek bar object        
         heightBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
@@ -50,7 +50,7 @@ public class FourthActivity extends Activity {
                 heightText.setText("Height:: " + progress);
                 tempHeight = progress;
             }
-        });       
+        });     */  
       
 	}
 
@@ -78,13 +78,96 @@ public class FourthActivity extends Activity {
 		Intent intent = new Intent(this, FifthActivity.class);		
 		
 		EditText editText = (EditText)findViewById(R.id.editWeightText);
-		int tempWeight = Integer.parseInt(editText.getText().toString());		
+		EditText editText1 = (EditText)findViewById(R.id.editFeetText);
+		EditText editText2 = (EditText)findViewById(R.id.editInchText);
+		//int tempWeight = Integer.parseInt(editText.getText().toString());	
+		//int tempFeet = Integer.parseInt(editText1.getText().toString());
+		//int tempInch = Integer.parseInt(editText2.getText().toString());		
 		
-		settings = PreferenceManager.getDefaultSharedPreferences(this);
-	    SharedPreferences.Editor editor = settings.edit();
-	    editor.putInt("height", tempHeight);
-	    editor.putInt("weight", tempWeight);
-	    editor.commit();
-		startActivity(intent);		
+		if(feetValidator(editText1.getText().toString()) == true)  
+        {  
+			 
+        }  
+		 else if(feetValidator(editText1.getText().toString()) == false) 
+        {  
+       	 //textView.setBackgroundColor(Color.RED);
+       	 editText1.setError("Please enter a number between 1 and 9");
+             //Toast.makeText(this, "Name field is required", Toast.LENGTH_LONG).show();  
+        } 
+		 if(inchValidator(editText2.getText().toString()) == true)  
+        {  
+			 
+        }  
+		 else if(inchValidator(editText2.getText().toString()) == false) 
+        {  
+       	 //textView.setBackgroundColor(Color.RED);
+       	 editText2.setError("Please enter a number between 1 and 12");
+             //Toast.makeText(this, "Name field is required", Toast.LENGTH_LONG).show();  
+        }  
+		 if(weightValidator(editText.getText().toString()) == true)  
+	        {  
+				 
+	        }  
+			 else if(weightValidator(editText.getText().toString()) == false) 
+	        {  
+	       	 //textView.setBackgroundColor(Color.RED);
+	       	 editText.setError("Please enter a number between 5 and 1000");
+	             //Toast.makeText(this, "Name field is required", Toast.LENGTH_LONG).show();  
+	        } 
+		if(feetValidator(editText1.getText().toString()) == true && inchValidator(editText2.getText().toString()) == true && weightValidator(editText.getText().toString()) == true)
+		{			
+			settings = PreferenceManager.getDefaultSharedPreferences(this);
+		    SharedPreferences.Editor editor = settings.edit();
+		    editor.putInt("heightFeet", Integer.parseInt(editText1.getText().toString()));
+		    editor.putInt("heightInch", Integer.parseInt(editText2.getText().toString()));
+		    editor.putInt("weight", Integer.parseInt(editText.getText().toString()));
+		    editor.commit();
+			startActivity(intent);
+		}		
+		
+		//startActivity(intent);		
 	}
+
+
+private boolean feetValidator(String values)  
+	{  
+     if((values.trim()).equals("") || values.equals(null))  
+     {  
+          return false;  
+     }  
+     else if(Integer.parseInt(values) < 1 || Integer.parseInt(values) > 9)
+    	 return false;
+     else 
+     {  
+          return true;  
+     }  
+	}  
+
+private boolean inchValidator(String values)  
+	{  
+     if((values.trim()).equals("") || values.equals(null))  
+     {  
+          return false;  
+     }  
+     else if(Integer.parseInt(values) < 1 || Integer.parseInt(values) > 12)
+    	 return false;
+     else 
+     {  
+          return true;  
+     }  
+	} 
+
+private boolean weightValidator(String values)  
+{  
+ if((values.trim()).equals("") || values.equals(null))  
+ {  
+      return false;  
+ }  
+ else if(Integer.parseInt(values) < 5 || Integer.parseInt(values) > 1000)
+	 return false;
+ else 
+ {  
+      return true;  
+ }  
+} 
 }
