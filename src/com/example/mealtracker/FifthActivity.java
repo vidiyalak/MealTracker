@@ -20,6 +20,7 @@ public class FifthActivity extends Activity {
 		String getGender = settings.getString("gender", "You did not select anything");
 		String getGoal = settings.getString("goal", "You did not select anything");
 		int getAge = settings.getInt("age", 0);
+		//added feet and inch to reflect changes in the scroll bar earlier to 2 spaces to collect user height info
 		int getHeightFeet = settings.getInt("heightFeet", 0);
 		int getHeightInch = settings.getInt("heightInch", 0);
 		int getHeight = (getHeightFeet * 12) + getHeightInch;
