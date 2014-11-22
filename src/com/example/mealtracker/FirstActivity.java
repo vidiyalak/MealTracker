@@ -83,21 +83,4 @@ public class FirstActivity extends Activity {
 		//intent.putExtra(GENDER_VALUE, str);
 	}	
 	
-	public void sendMessage(View view)
-    {
-    Intent intent = new Intent(this, SecondActivity.class);    
-    startActivity(intent);
-    }
-	
-	public void loseWeight(View view)
-    {
-    Intent intent = new Intent(this, LoseWeight.class);    
-    startActivity(intent);
-    }
-	
-	public void gainWeight(View view)
-    {
-    Intent intent = new Intent(this, GainWeight.class);    
-    startActivity(intent);
-    }
 }
