@@ -50,24 +50,26 @@ public final class R {
         public static final int textView2=0x7f080006;
     }
     public static final class layout {
-        public static final int activity_fifth=0x7f030000;
-        public static final int activity_first=0x7f030001;
-        public static final int activity_fourth=0x7f030002;
-        public static final int activity_gain_weight=0x7f030003;
-        public static final int activity_lose_weight=0x7f030004;
-        public static final int activity_main=0x7f030005;
-        public static final int activity_second=0x7f030006;
-        public static final int activity_third=0x7f030007;
+        public static final int activity_add_alarm=0x7f030000;
+        public static final int activity_fifth=0x7f030001;
+        public static final int activity_first=0x7f030002;
+        public static final int activity_fourth=0x7f030003;
+        public static final int activity_gain_weight=0x7f030004;
+        public static final int activity_lose_weight=0x7f030005;
+        public static final int activity_main=0x7f030006;
+        public static final int activity_second=0x7f030007;
+        public static final int activity_third=0x7f030008;
     }
     public static final class menu {
-        public static final int fifth=0x7f070000;
-        public static final int first=0x7f070001;
-        public static final int fourth=0x7f070002;
-        public static final int gain_weight=0x7f070003;
-        public static final int lose_weight=0x7f070004;
-        public static final int main=0x7f070005;
-        public static final int second=0x7f070006;
-        public static final int third=0x7f070007;
+        public static final int add_alarm=0x7f070000;
+        public static final int fifth=0x7f070001;
+        public static final int first=0x7f070002;
+        public static final int fourth=0x7f070003;
+        public static final int gain_weight=0x7f070004;
+        public static final int lose_weight=0x7f070005;
+        public static final int main=0x7f070006;
+        public static final int second=0x7f070007;
+        public static final int third=0x7f070008;
     }
     public static final class string {
         public static final int action_settings=0x7f05000d;
@@ -82,6 +84,7 @@ public final class R {
         public static final int hello_world=0x7f05000c;
         public static final int next=0x7f050002;
         public static final int tall=0x7f050005;
+        public static final int title_activity_add_alarm=0x7f050015;
         public static final int title_activity_fifth=0x7f050012;
         public static final int title_activity_first=0x7f05000e;
         public static final int title_activity_fourth=0x7f050011;

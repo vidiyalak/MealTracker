@@ -22,5 +22,6 @@
     <string name="title_activity_fifth">FifthActivity</string>
     <string name="title_activity_lose_weight">LoseWeight</string>
     <string name="title_activity_gain_weight">GainWeight</string>
+    <string name="title_activity_add_alarm">AddAlarmActivity</string>
 
 </resources>
