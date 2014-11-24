@@ -12,10 +12,6 @@ import com.example.mealtracker.R;
 import com.example.mealtracker.model.Alarm;
 import com.example.mealtracker.model.AlarmMsg;
 
-/**
- * @author appsrox.com
- *
- */
 public class AlarmReceiver extends BroadcastReceiver {
 	
 //	private static final String TAG = "AlarmReceiver";
