@@ -12,7 +12,8 @@ import com.example.mealreminder.R;
 import com.example.mealreminder.model.Alarm;
 import com.example.mealreminder.model.AlarmMsg;
 
-class AlarmReceiver extends BroadcastReceiver {
+
+public class AlarmReceiver extends BroadcastReceiver {
 	
 //	private static final String TAG = "AlarmReceiver";
 

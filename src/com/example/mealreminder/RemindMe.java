@@ -8,6 +8,7 @@ import android.preference.PreferenceManager;
 import com.example.mealreminder.R;
 import com.example.mealreminder.model.DbHelper;
 
+
 public class RemindMe extends Application {
 	
 //	private static final String TAG = "RemindMe";
