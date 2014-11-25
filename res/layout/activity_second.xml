@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.mealtracker.SecondActivity" >
+    tools:context="com.example.mealreminder.SecondActivity" >
 
     <TextView
         android:id="@+id/textView1"
@@ -14,48 +14,39 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:textSize="20sp"
-        android:text="@string/active" />
+        android:layout_marginTop="40dp"
+        android:text="What is your goal?" />
 
     <RadioGroup
         android:id="@+id/radioGroup1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="30dp" >
+        android:layout_marginTop="40dp" >
 
         <RadioButton
             android:id="@+id/radio0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"  
-            android:text="@string/activityLevel1" />
+            android:onClick="onRadioButtonClicked"
+            android:text="Lose Weight" />
 
         <RadioButton
             android:id="@+id/radio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:onClick="onRadioButtonClicked" 
-            android:text="@string/activityLevel2" />
+            android:layout_marginTop="40dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Maintain Weight" />
 
         <RadioButton
             android:id="@+id/radio2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:onClick="onRadioButtonClicked"  
-            android:text="@string/activityLevel3" />
-        
-        <RadioButton
-            android:id="@+id/radio3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:onClick="onRadioButtonClicked"  
-            android:text="@string/activityLevel4" />
-        
+            android:layout_marginTop="40dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Gain Weight" />
     </RadioGroup>
-    
+
 </RelativeLayout>

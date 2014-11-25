@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.mealtracker.GainWeight" >
+    tools:context="com.example.mealreminder.GainWeight" >
 
     <TextView
         android:id="@+id/textView1"
@@ -57,6 +57,5 @@
             android:text="2 lb" />
         
     </RadioGroup>
-
 
 </RelativeLayout>

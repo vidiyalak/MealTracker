@@ -6,15 +6,71 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.mealtracker.FifthActivity" >
+    tools:context="com.example.mealreminder.FifthActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="67dp"
+        android:onClick="sendMessage"
+        android:text="Continue" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="height"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="128dp"        
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_marginTop="46dp" >
+
+        <EditText
+            android:id="@+id/editFeetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="feet"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editInchText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="inches"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editWeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:ems="5"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_centerVertical="true"
+        android:text="weight"
+        android:textSize="15sp" />
 
 </RelativeLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mealtracker"
+    package="com.example.mealreminder"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -8,13 +8,16 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="20" />
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
-        android:allowBackup="true"
+        android:name="com.example.mealreminder.RemindMe"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/app_theme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.mealreminder.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,64 +26,58 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FirstActivity"
-            android:label="@string/title_activity_first"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.mealtracker.MainActivity" />
+            android:name="com.example.mealreminder.AddAlarmActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name="com.example.mealreminder.SettingsActivity" >
+        </activity>
+
+        <receiver android:name="com.example.mealreminder.AlarmSetter" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.mealreminder.AlarmReceiver" >
+        </receiver>
+
+        <service android:name="com.example.mealreminder.AlarmService" >
+        </service>
+
+        <activity
+            android:name="com.example.mealreminder.Welcome"
+            android:label="@string/title_activity_welcome" >
         </activity>
         <activity
-            android:name=".SecondActivity"
-            android:label="@string/title_activity_second"
-            android:parentActivityName=".FirstActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.mealtracker.FirstActivity" />
+            android:name="com.example.mealreminder.FirstActivity"
+            android:label="@string/title_activity_first" >
         </activity>
         <activity
-            android:name=".ThirdActivity"
-            android:label="@string/title_activity_third"
-            android:parentActivityName=".SecondActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.mealtracker.SecondActivity" />
+            android:name="com.example.mealreminder.SecondActivity"
+            android:label="@string/title_activity_second" >
         </activity>
         <activity
-            android:name=".FourthActivity"
-            android:label="@string/title_activity_fourth"
-            android:parentActivityName=".ThirdActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.mealtracker.ThirdActivity" />
+            android:name="com.example.mealreminder.ThirdActivity"
+            android:label="@string/title_activity_third" >
         </activity>
         <activity
-            android:name=".FifthActivity"
-            android:label="@string/title_activity_fifth"
-            android:parentActivityName=".FourthActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.mealtracker.FourthActivity" />
+            android:name="com.example.mealreminder.LoseWeight"
+            android:label="@string/title_activity_lose_weight" >
         </activity>
         <activity
-            android:name=".LoseWeight"
-            android:label="@string/title_activity_lose_weight"
-            android:parentActivityName=".FirstActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.mealtracker.FirstActivity" />
+            android:name="com.example.mealreminder.GainWeight"
+            android:label="@string/title_activity_gain_weight" >
         </activity>
         <activity
-            android:name=".GainWeight"
-            android:label="@string/title_activity_gain_weight"
-            android:parentActivityName=".FirstActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.mealtracker.FirstActivity" />
+            android:name="com.example.mealreminder.FourthActivity"
+            android:label="@string/title_activity_fourth" >
         </activity>
         <activity
-            android:name=".AddAlarmActivity"
-            android:label="@string/title_activity_add_alarm" >
+            android:name="com.example.mealreminder.FifthActivity"
+            android:label="@string/title_activity_fifth" >
+        </activity>
+        <activity
+            android:name="com.example.mealreminder.SixthActivity"
+            android:label="@string/title_activity_sixth" >
         </activity>
     </application>
 

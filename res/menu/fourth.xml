@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.mealtracker.FourthActivity" >
+    tools:context="com.appsrox.remindme.FourthActivity" >
 
     <item
         android:id="@+id/action_settings"
