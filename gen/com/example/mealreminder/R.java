@@ -1362,6 +1362,10 @@ containing a value of this type.
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0b000b;
         public static final int action_settings=0x7f0b0014;
+        public static final int activityLevel1=0x7f0b001e;
+        public static final int activityLevel2=0x7f0b001f;
+        public static final int activityLevel3=0x7f0b0020;
+        public static final int activityLevel4=0x7f0b0021;
         public static final int app_name=0x7f0b000d;
         public static final int delete=0x7f0b000f;
         public static final int delete_all=0x7f0b0011;

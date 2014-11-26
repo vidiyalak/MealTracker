@@ -454,6 +454,10 @@ int string abc_searchview_description_voice 0x7f0b0008
 int string abc_shareactionprovider_share_with 0x7f0b000c
 int string abc_shareactionprovider_share_with_application 0x7f0b000b
 int string action_settings 0x7f0b0014
+int string activityLevel1 0x7f0b001e
+int string activityLevel2 0x7f0b001f
+int string activityLevel3 0x7f0b0020
+int string activityLevel4 0x7f0b0021
 int string app_name 0x7f0b000d
 int string delete 0x7f0b000f
 int string delete_all 0x7f0b0011
