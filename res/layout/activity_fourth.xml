@@ -39,7 +39,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="gender"
+        android:text="Gender"
         android:textSize="20sp" />
 
     <TextView
@@ -48,26 +48,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="age"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <SeekBar
-        android:id="@+id/ageSeekBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:max="120" />
-
-    <TextView
-        android:id="@+id/ageTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/ageSeekBar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="23dp"
-        android:text="Age::"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:text="What is you age?"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/button1"
@@ -78,5 +60,25 @@
         android:layout_marginBottom="39dp"
         android:onClick="sendMessage"
         android:text="Continue" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Age::"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <SeekBar
+        android:id="@+id/ageSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:max="120" />
 
 </RelativeLayout>
