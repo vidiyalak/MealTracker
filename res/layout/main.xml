@@ -122,4 +122,15 @@
 	            
 	</LinearLayout>    
     
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingRight="3dip"
+		android:background="#5c755e"
+		android:gravity="right"
+		android:textColor="#3d4935"
+		android:textSize="10sp"
+		android:textStyle="italic"
+		android:text="Made by Love with HeartBleed " />    
+
 </LinearLayout>
