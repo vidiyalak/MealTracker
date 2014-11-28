@@ -14,47 +14,48 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:textSize="20sp"
-        android:text="@string/active" />
+        android:layout_marginTop="40dp"
+        android:text="What is your activity level?" />
 
     <RadioGroup
         android:id="@+id/radioGroup1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="20dp" >
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp" >
 
         <RadioButton
             android:id="@+id/radio0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/activityLevel1" />
+            android:text="Sedentary" />
 
         <RadioButton
             android:id="@+id/radio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/activityLevel2" />
+            android:text="Light" />
 
         <RadioButton
             android:id="@+id/radio2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/activityLevel3" />
-
+            android:text="Moderate" />
+        
         <RadioButton
             android:id="@+id/radio3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/activityLevel4" />
+            android:text="Active" />
     </RadioGroup>
 
 </RelativeLayout>

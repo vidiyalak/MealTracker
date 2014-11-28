@@ -11,19 +11,16 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_first">FirstActivity</string>
-    <string name="title_activity_second">Goal</string>
-    <string name="title_activity_third">Activity Level</string>
-    <string name="title_activity_gain_weight">Gain Weight Goal</string>
-    <string name="title_activity_lose_weight">Lose Weight Goal</string>
-    <string name="title_activity_fourth">Gender and Age</string>
-    <string name="title_activity_fifth">Height and Weight</string>
-    <string name="title_activity_sixth">Results</string>
-    <string name="active">"How active are you?"</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_third">ThirdActivity</string>
+    <string name="title_activity_gain_weight">GainWeight</string>
+    <string name="title_activity_lose_weight">LoseWeight</string>
+    <string name="title_activity_fourth">FourthActivity</string>
+    <string name="title_activity_fifth">FifthActivity</string>
+    <string name="title_activity_sixth">SixthActivity</string>
     <string name="activityLevel1">"Sedentary\nLittle or no exercise"</string>
     <string name="activityLevel2">"Lightly active\nExercise or sports 1 to 3 times a week"</string>
     <string name="activityLevel3">"Moderately active\nExercise or sports 3 to 5 times a week"</string>
     <string name="activityLevel4">"Very active\nExercise or sports 6 to 7 times a week"</string>
-    <string name="tall">"Height (feet and inches)"</string>
-    <string name="weight">"Weight (in pounds)"</string>
 
 </resources>

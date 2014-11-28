@@ -8,6 +8,26 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.mealreminder.FifthActivity" >
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="67dp"
+        android:onClick="sendMessage"
+        android:text="Continue" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="height"
+        android:textSize="15sp" />
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
@@ -21,9 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="feet"
-            android:inputType="number" >
-            <requestFocus />
-       </EditText>
+            android:inputType="number" />
 
         <EditText
             android:id="@+id/editInchText"
@@ -43,36 +61,16 @@
         android:ems="5"
         android:inputType="numberDecimal" >
 
-        
+        <requestFocus />
     </EditText>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@+id/linearLayout1"
         android:layout_centerVertical="true"
-        android:text="@string/weight"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp"
-        android:text="@string/tall"
-        android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
-        android:onClick="sendMessage"
-        android:text="Continue" />
+        android:text="weight"
+        android:textSize="15sp" />
 
 </RelativeLayout>
