@@ -24,7 +24,7 @@
 	        android:shadowColor="#333333"	        
 	        android:textColor="#d3e397"
 	        android:textSize="18sp"            
-            android:text="Remind Me" />
+            android:text="Meal Tracker" />
 
         <ImageButton
             android:id="@+id/imageButton1"
