@@ -9,50 +9,64 @@
         android:id="@+id/menu_bar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#5c755e" >
+        android:background="@color/activ" >
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageButton2"
+            android:background="@null"
+            android:onClick="onClick"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:src="@drawable/calculator" />
 
         <TextView
             android:id="@+id/heading_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:padding="5dip"
-	        android:shadowDx="0"
-	        android:shadowDy="0"
-	        android:shadowRadius="1"
-	        android:shadowColor="#333333"	        
-	        android:textColor="#d3e397"
-	        android:textSize="18sp"            
-            android:text="Meal Tracker" />
+            android:shadowColor="#333333"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:text="Meal Tracker"
+            android:textColor="#d3e397"
+            android:textSize="25sp" />
 
         <ImageButton
             android:id="@+id/imageButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:paddingTop="5dip"
+            android:background="@null"
+            android:onClick="onClick"
             android:paddingBottom="5dip"
             android:paddingLeft="5dip"
             android:paddingRight="10dip"
-            android:onClick="onClick"
-            android:background="@null"
+            android:paddingTop="5dip"
             android:src="@drawable/preferences" />
-        
+
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@id/imageButton1"
-            android:paddingTop="5dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="onClick"
             android:paddingBottom="5dip"
             android:paddingLeft="10dip"
             android:paddingRight="5dip"
-            android:onClick="onClick"
-            android:background="@null"
-            android:src="@drawable/add" />           
+            android:paddingTop="5dip"
+            android:src="@drawable/add" />
 
     </RelativeLayout>
 
@@ -126,11 +140,11 @@
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:paddingRight="3dip"
-		android:background="#5c755e"
+		android:background="@color/activ"
 		android:gravity="right"
 		android:textColor="#3d4935"
 		android:textSize="10sp"
 		android:textStyle="italic"
-		android:text="Made by Love with HeartBleed " />    
+		android:text="Made with Love by HeartBleed " />    
 
 </LinearLayout>
