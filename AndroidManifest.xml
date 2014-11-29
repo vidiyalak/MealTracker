@@ -54,31 +54,38 @@
         </activity>
         <activity
             android:name="com.example.mealreminder.SecondActivity"
-            android:label="@string/title_activity_second" >
+            android:label="@string/title_activity_second" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="com.example.mealreminder.ThirdActivity"
-            android:label="@string/title_activity_third" >
+            android:label="@string/title_activity_third" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="com.example.mealreminder.LoseWeight"
-            android:label="@string/title_activity_lose_weight" >
+            android:label="@string/title_activity_lose_weight" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="com.example.mealreminder.GainWeight"
-            android:label="@string/title_activity_gain_weight" >
+            android:label="@string/title_activity_gain_weight" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="com.example.mealreminder.FourthActivity"
-            android:label="@string/title_activity_fourth" >
+            android:label="@string/title_activity_fourth" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="com.example.mealreminder.FifthActivity"
-            android:label="@string/title_activity_fifth" >
+            android:label="@string/title_activity_fifth" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="com.example.mealreminder.SixthActivity"
-            android:label="@string/title_activity_sixth" >
+            android:label="@string/title_activity_sixth" 
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
