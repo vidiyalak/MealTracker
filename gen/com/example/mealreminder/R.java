@@ -1098,21 +1098,23 @@ containing a value of this type.
         public static final int apple=0x7f020058;
         public static final int bg_repeat=0x7f020059;
         public static final int calculator=0x7f02005a;
-        public static final int ic_dialog_menu_generic=0x7f02005b;
-        public static final int ic_launcher=0x7f02005c;
-        public static final int left=0x7f02005d;
-        public static final int line=0x7f02005e;
-        public static final int ok=0x7f02005f;
-        public static final int onetime=0x7f020060;
-        public static final int pencil=0x7f020061;
-        public static final int preferences=0x7f020062;
-        public static final int range=0x7f020063;
-        public static final int repeating=0x7f020064;
-        public static final int restaurant_icons=0x7f020065;
-        public static final int right=0x7f020066;
-        public static final int rounded_blue=0x7f020067;
-        public static final int title_bar_shadow=0x7f020068;
-        public static final int type_selector=0x7f020069;
+        public static final int home=0x7f02005b;
+        public static final int ic_dialog_menu_generic=0x7f02005c;
+        public static final int ic_launcher=0x7f02005d;
+        public static final int ic_menu_home=0x7f02005e;
+        public static final int left=0x7f02005f;
+        public static final int line=0x7f020060;
+        public static final int ok=0x7f020061;
+        public static final int onetime=0x7f020062;
+        public static final int pencil=0x7f020063;
+        public static final int preferences=0x7f020064;
+        public static final int range=0x7f020065;
+        public static final int repeating=0x7f020066;
+        public static final int restaurant_icons=0x7f020067;
+        public static final int right=0x7f020068;
+        public static final int rounded_blue=0x7f020069;
+        public static final int title_bar_shadow=0x7f02006a;
+        public static final int type_selector=0x7f02006b;
     }
     public static final class id {
         public static final int action_bar=0x7f06001c;
@@ -1126,7 +1128,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f060016;
         public static final int action_menu_presenter=0x7f060017;
         public static final int action_mode_close_button=0x7f060024;
-        public static final int action_settings=0x7f06007b;
+        public static final int action_settings=0x7f06007c;
         public static final int activity_chooser_view_content=0x7f060025;
         public static final int ageSeekBar=0x7f06004e;
         public static final int ageTextView=0x7f06004f;
@@ -1139,7 +1141,7 @@ containing a value of this type.
         public static final int checkbox=0x7f06002d;
         public static final int collapseActionView=0x7f06000d;
         public static final int datePicker=0x7f060059;
-        public static final int date_tv=0x7f060075;
+        public static final int date_tv=0x7f060076;
         public static final int days_et=0x7f06006f;
         public static final int default_activity_button=0x7f060028;
         public static final int dialog=0x7f06000e;
@@ -1168,21 +1170,22 @@ containing a value of this type.
         public static final int imageButton3=0x7f060047;
         public static final int imageButton4=0x7f060049;
         public static final int imageButton5=0x7f060072;
+        public static final int imageButton6=0x7f060073;
         public static final int linearLayout1=0x7f06003c;
         public static final int listMode=0x7f060001;
         public static final int list_item=0x7f060029;
         public static final int list_view=0x7f06004a;
         public static final int menu_bar=0x7f060043;
-        public static final int menu_delete=0x7f060079;
-        public static final int menu_delete_all=0x7f06007c;
-        public static final int menu_delete_repeating=0x7f06007a;
-        public static final int menu_edit=0x7f060078;
+        public static final int menu_delete=0x7f06007a;
+        public static final int menu_delete_all=0x7f06007d;
+        public static final int menu_delete_repeating=0x7f06007b;
+        public static final int menu_edit=0x7f060079;
         public static final int middle=0x7f060012;
         public static final int mins_et=0x7f06006d;
-        public static final int month_tv=0x7f060073;
+        public static final int month_tv=0x7f060074;
         public static final int months_et=0x7f060070;
         public static final int msg_et=0x7f060055;
-        public static final int msg_tv=0x7f060076;
+        public static final int msg_tv=0x7f060077;
         public static final int never=0x7f060009;
         public static final int none=0x7f060010;
         public static final int normal=0x7f060000;
@@ -1228,7 +1231,7 @@ containing a value of this type.
         public static final int textView8=0x7f060068;
         public static final int textView9=0x7f060069;
         public static final int timePicker=0x7f06005a;
-        public static final int time_tv=0x7f060077;
+        public static final int time_tv=0x7f060078;
         public static final int title=0x7f06002b;
         public static final int todate_lb=0x7f06005d;
         public static final int todate_tv=0x7f06005e;
@@ -1238,7 +1241,7 @@ containing a value of this type.
         public static final int useLogo=0x7f060003;
         public static final int view_switcher=0x7f060058;
         public static final int withText=0x7f06000c;
-        public static final int year_tv=0x7f060074;
+        public static final int year_tv=0x7f060075;
         public static final int years_et=0x7f060071;
     }
     public static final class integer {

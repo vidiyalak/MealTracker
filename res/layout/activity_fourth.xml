@@ -50,6 +50,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="Age"
+        android:layout_marginBottom="30dp"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
          />
@@ -60,6 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/button1"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
         android:max="120" />
 
     <TextView
@@ -68,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/ageSeekBar"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="23dp"
+        android:layout_marginBottom="30dp"
         android:text="Age::"
         android:textColor="#FFFFFF"
         android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -79,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="39dp"
+        android:layout_marginBottom="20dp"
         android:onClick="sendMessage"
         android:text="Continue" />
 

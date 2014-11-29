@@ -253,6 +253,9 @@ public class FirstActivity extends ListActivity {
 			});  
 			ad.show();  
 			break;
+		case R.id.imageButton6:
+			startActivity(new Intent(this, MainActivity.class));
+			break;
 /*		case R.id.toggleButton1:
 			vs.showNext();
 			break;*/

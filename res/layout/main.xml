@@ -68,6 +68,20 @@
             android:paddingTop="5dip"
             android:src="@drawable/calculator" />
 
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/heading_tv"
+            android:background="@null"
+            android:onClick="onClick"
+            android:paddingBottom="5dip"
+            android:paddingLeft="7dip"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip"
+            android:src="@drawable/home" />
+
     </RelativeLayout>
 
 	<LinearLayout
