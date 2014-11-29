@@ -7,7 +7,7 @@
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:orientation="vertical"
-	    android:background="#3d4935" >
+	    android:background="#161CDD" >
 	
 	    <EditText
 	        android:id="@+id/msg_et"
@@ -40,7 +40,7 @@
 	        android:id="@+id/view_switcher"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
-	        android:background="#5c755e"
+	        android:background="@color/activ"
 	        android:paddingTop="10dip"
 	        android:paddingLeft="5dip"
 	        android:paddingRight="5dip" >
@@ -58,7 +58,7 @@
 	    <LinearLayout
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
-	        android:background="#5c755e"
+	        android:background="@color/activ"
 	        android:gravity="right" >
 			<ImageButton
 			    android:layout_width="wrap_content"
