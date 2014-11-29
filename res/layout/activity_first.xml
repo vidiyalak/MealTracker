@@ -131,6 +131,6 @@
 		android:textColor="#3d4935"
 		android:textSize="10sp"
 		android:textStyle="italic"
-		android:text="(c) appsrox.com" />    
+		android:text="MealTracker" />    
 
 </LinearLayout>

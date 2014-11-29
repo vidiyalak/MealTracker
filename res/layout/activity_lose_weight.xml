@@ -16,6 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textSize="20sp"
+        android:textColor="#FFFFFF"
         android:text="How much do you want to lose per week?" />
 
     <RadioGroup
