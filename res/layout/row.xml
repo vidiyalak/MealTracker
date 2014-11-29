@@ -41,6 +41,16 @@
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@id/date_tv"
         android:textColor="#587498"
+        android:textSize="22sp" />
+    
+    <TextView
+        android:id="@+id/meal_note_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/msg_tv"
+        android:textColor="#587498"
         android:textSize="18sp" />
     
     <TextView
@@ -48,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@id/msg_tv"
+        android:layout_below="@id/meal_note_tv"
         android:paddingTop="5sp"
         android:textColor="#777777"
         android:textSize="12sp" />    
