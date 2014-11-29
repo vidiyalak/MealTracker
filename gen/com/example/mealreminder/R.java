@@ -1110,8 +1110,9 @@ containing a value of this type.
         public static final int repeating=0x7f020064;
         public static final int restaurant_icons=0x7f020065;
         public static final int right=0x7f020066;
-        public static final int title_bar_shadow=0x7f020067;
-        public static final int type_selector=0x7f020068;
+        public static final int rounded_blue=0x7f020067;
+        public static final int title_bar_shadow=0x7f020068;
+        public static final int type_selector=0x7f020069;
     }
     public static final class id {
         public static final int action_bar=0x7f06001c;

@@ -261,8 +261,9 @@ int drawable range 0x7f020063
 int drawable repeating 0x7f020064
 int drawable restaurant_icons 0x7f020065
 int drawable right 0x7f020066
-int drawable title_bar_shadow 0x7f020067
-int drawable type_selector 0x7f020068
+int drawable rounded_blue 0x7f020067
+int drawable title_bar_shadow 0x7f020068
+int drawable type_selector 0x7f020069
 int id action_bar 0x7f06001c
 int id action_bar_activity_content 0x7f060015
 int id action_bar_container 0x7f06001b
