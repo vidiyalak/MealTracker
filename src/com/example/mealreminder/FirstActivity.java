@@ -235,10 +235,16 @@ public class FirstActivity extends ListActivity {
 			AlertDialog ad = new AlertDialog.Builder(this).create();  
 			ad.setCancelable(false); // This blocks the 'BACK' button  
 			if(count != -1)
-				ad.setMessage("You require " + totalCalories/count + " calories per meal\n" + Math.round((totalCalories/count)*.55/4) + " grams of carbs\n" + Math.round((totalCalories/count)*.3/9) + " grams of fat\n" + Math.round((totalCalories/count)*.15/4) + " grams of protein"); 
+			{
+				ad.setTitle("Calories Per Meal");
+				ad.setMessage("You require " + totalCalories/count + " calories per meal\n" + Math.round((totalCalories/count)*.55/4) + " grams of carbs\n" + Math.round((totalCalories/count)*.3/9) + " grams of fat\n" + Math.round((totalCalories/count)*.15/4) + " grams of protein");
+			}
 			else if(count == -1)
-				ad.setMessage("Please create a meal to know the calories per meal");
-			ad.setTitle("Calories Per Meal");
+			{
+				ad.setTitle("Calories Per Day");
+				ad.setMessage("You require " + totalCalories + " calories per day\n" + Math.round((totalCalories)*.55/4) + " grams of carbs\n" + Math.round((totalCalories)*.3/9) + " grams of fat\n" + Math.round((totalCalories)*.15/4) + " grams of protein");
+			}
+			//ad.setTitle("Calories Per Meal");
 			ad.setButton("OK", new DialogInterface.OnClickListener() {  
 			    @Override  
 			    public void onClick(DialogInterface dialog, int which) {  
