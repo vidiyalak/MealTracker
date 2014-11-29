@@ -163,7 +163,7 @@ public class AddAlarmActivity extends Activity {
 	private boolean validate() {
 		if (TextUtils.isEmpty(msgEdit.getText())) {
 			msgEdit.requestFocus();
-			Toast.makeText(this, "Enter a message", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "Enter a reminder name", Toast.LENGTH_SHORT).show();
 			return false;
 		}
 		
