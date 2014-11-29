@@ -1133,7 +1133,7 @@ containing a value of this type.
         public static final int attime_lb=0x7f06005f;
         public static final int attime_tv=0x7f060060;
         public static final int beginning=0x7f060011;
-        public static final int button1=0x7f06003c;
+        public static final int button1=0x7f060041;
         public static final int button2=0x7f060052;
         public static final int checkbox=0x7f06002d;
         public static final int collapseActionView=0x7f06000d;
@@ -1144,8 +1144,8 @@ containing a value of this type.
         public static final int dialog=0x7f06000e;
         public static final int disableHome=0x7f060008;
         public static final int dropdown=0x7f06000f;
-        public static final int editFeetText=0x7f060040;
-        public static final int editInchText=0x7f060041;
+        public static final int editFeetText=0x7f06003e;
+        public static final int editInchText=0x7f06003f;
         public static final int editWeightText=0x7f060042;
         public static final int edit_query=0x7f060030;
         public static final int end=0x7f060013;
@@ -1167,7 +1167,7 @@ containing a value of this type.
         public static final int imageButton3=0x7f060047;
         public static final int imageButton4=0x7f060049;
         public static final int imageButton5=0x7f060072;
-        public static final int linearLayout1=0x7f06003f;
+        public static final int linearLayout1=0x7f06003c;
         public static final int listMode=0x7f060001;
         public static final int list_item=0x7f060029;
         public static final int list_view=0x7f06004a;
@@ -1222,7 +1222,7 @@ containing a value of this type.
         public static final int textView10=0x7f06006a;
         public static final int textView11=0x7f06006b;
         public static final int textView12=0x7f06006c;
-        public static final int textView2=0x7f06003e;
+        public static final int textView2=0x7f060040;
         public static final int textView7=0x7f060065;
         public static final int textView8=0x7f060068;
         public static final int textView9=0x7f060069;

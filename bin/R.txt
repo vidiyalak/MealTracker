@@ -282,7 +282,7 @@ int id always 0x7f06000b
 int id attime_lb 0x7f06005f
 int id attime_tv 0x7f060060
 int id beginning 0x7f060011
-int id button1 0x7f06003c
+int id button1 0x7f060041
 int id button2 0x7f060052
 int id checkbox 0x7f06002d
 int id collapseActionView 0x7f06000d
@@ -293,8 +293,8 @@ int id default_activity_button 0x7f060028
 int id dialog 0x7f06000e
 int id disableHome 0x7f060008
 int id dropdown 0x7f06000f
-int id editFeetText 0x7f060040
-int id editInchText 0x7f060041
+int id editFeetText 0x7f06003e
+int id editInchText 0x7f06003f
 int id editWeightText 0x7f060042
 int id edit_query 0x7f060030
 int id end 0x7f060013
@@ -316,7 +316,7 @@ int id imageButton2 0x7f060046
 int id imageButton3 0x7f060047
 int id imageButton4 0x7f060049
 int id imageButton5 0x7f060072
-int id linearLayout1 0x7f06003f
+int id linearLayout1 0x7f06003c
 int id listMode 0x7f060001
 int id list_item 0x7f060029
 int id list_view 0x7f06004a
@@ -371,7 +371,7 @@ int id textView1 0x7f06003d
 int id textView10 0x7f06006a
 int id textView11 0x7f06006b
 int id textView12 0x7f06006c
-int id textView2 0x7f06003e
+int id textView2 0x7f060040
 int id textView7 0x7f060065
 int id textView8 0x7f060068
 int id textView9 0x7f060069

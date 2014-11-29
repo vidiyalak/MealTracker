@@ -8,11 +8,13 @@ import android.app.Dialog;
 import android.app.ListActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
@@ -29,6 +31,9 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.SimpleCursorAdapter.ViewBinder;
 import android.widget.TextView;
 import android.widget.Toast;
+
+
+
 
 import com.example.mealreminder.R;
 import com.example.mealreminder.model.Alarm;
@@ -218,7 +223,30 @@ public class FirstActivity extends ListActivity {
 			move(+1);
 			rangeText.setText(getRangeStr());
 			((SimpleCursorAdapter)getListAdapter()).changeCursor(createCursor());
-			break;			
+			break;	
+		case R.id.imageButton5:
+			//get the number of items in the list view that represents number of meals
+			int count = getListView().getChildCount();
+			if(count == 0)//if list view is empty
+				count = -1;
+			SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+			int totalCalories = settings.getInt("totalCalories", 10);
+			//create an alert dialog to display the number of calories per meal
+			AlertDialog ad = new AlertDialog.Builder(this).create();  
+			ad.setCancelable(false); // This blocks the 'BACK' button  
+			if(count != -1)
+				ad.setMessage("You require " + totalCalories/count + " calories per meal\n" + Math.round((totalCalories/count)*.55/4) + " grams of carbs\n" + Math.round((totalCalories/count)*.3/9) + " grams of fat\n" + Math.round((totalCalories/count)*.15/4) + " grams of protein"); 
+			else if(count == -1)
+				ad.setMessage("Please create a meal to know the calories per meal");
+			ad.setTitle("Calories Per Meal");
+			ad.setButton("OK", new DialogInterface.OnClickListener() {  
+			    @Override  
+			    public void onClick(DialogInterface dialog, int which) {  
+			        dialog.dismiss();                      
+			    }  
+			});  
+			ad.show();  
+			break;
 /*		case R.id.toggleButton1:
 			vs.showNext();
 			break;*/

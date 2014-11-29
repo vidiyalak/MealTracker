@@ -37,7 +37,7 @@ public class SixthActivity extends Activity {
 			    //send the Weight Value from the fourth
 				
 				double caloriesRequired = calculateCalories(getAge, getWeight, getHeight, getGender, getActivityLevel, getLoseWeightAmount, getGainWeightAmount, getGoal);
-				
+				int calorieRequired = (int) Math.round(caloriesRequired);
 				/*Random test cases. I just left it here so I can debug stuff later if needed
 			    TextView textView = (TextView) findViewById(R.id.textView1);
 			    textView.setTextSize(10);
@@ -61,7 +61,11 @@ public class SixthActivity extends Activity {
 			    */
 			    TextView textView5 = (TextView) findViewById(R.id.textView1);
 			    //textView5.setTextSize(10);
-			    textView5.setText("You require: " + Math.round(caloriesRequired) + " calories.");	    
+			    textView5.setText("You require: " + Math.round(caloriesRequired) + " calories.");	
+			    SharedPreferences.Editor editor = settings.edit();
+			    editor.putInt("totalCalories", calorieRequired);
+			    editor.commit();
+			    
 	}
 
 	@Override
