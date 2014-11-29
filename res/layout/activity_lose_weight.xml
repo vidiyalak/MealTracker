@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
         android:text="How much do you want to lose per week?" />
 
     <RadioGroup
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp" >
+        android:layout_marginTop="40dp" >
 
         <RadioButton
             android:id="@+id/radio0"
