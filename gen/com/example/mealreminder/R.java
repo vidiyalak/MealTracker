@@ -64,7 +64,7 @@ public final class R {
         public static final int type_selector=0x7f020014;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0041;
+        public static final int action_settings=0x7f0b0042;
         public static final int ageSeekBar=0x7f0b0012;
         public static final int ageTextView=0x7f0b0013;
         public static final int attime_lb=0x7f0b0024;
@@ -92,11 +92,12 @@ public final class R {
         public static final int linearLayout1=0x7f0b0000;
         public static final int list_view=0x7f0b000e;
         public static final int meal_note=0x7f0b001a;
+        public static final int meal_note_tv=0x7f0b003d;
         public static final int menu_bar=0x7f0b0007;
-        public static final int menu_delete=0x7f0b003f;
-        public static final int menu_delete_all=0x7f0b0042;
-        public static final int menu_delete_repeating=0x7f0b0040;
-        public static final int menu_edit=0x7f0b003e;
+        public static final int menu_delete=0x7f0b0040;
+        public static final int menu_delete_all=0x7f0b0043;
+        public static final int menu_delete_repeating=0x7f0b0041;
+        public static final int menu_edit=0x7f0b003f;
         public static final int mins_et=0x7f0b0032;
         public static final int month_tv=0x7f0b0039;
         public static final int months_et=0x7f0b0035;
@@ -124,7 +125,7 @@ public final class R {
         public static final int textView8=0x7f0b002d;
         public static final int textView9=0x7f0b002e;
         public static final int timePicker=0x7f0b001f;
-        public static final int time_tv=0x7f0b003d;
+        public static final int time_tv=0x7f0b003e;
         public static final int todate_lb=0x7f0b0022;
         public static final int todate_tv=0x7f0b0023;
         public static final int toggleButton1=0x7f0b001c;

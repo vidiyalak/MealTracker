@@ -32,7 +32,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 		Notification n = new Notification(R.drawable.ic_launcher, alarm.getName(), System.currentTimeMillis());
 		PendingIntent pi = PendingIntent.getActivity(context, 0, new Intent(), 0);
 		
-		n.setLatestEventInfo(context, "Remind Me", alarm.getName(), pi);		
+		n.setLatestEventInfo(context, "Meal Reminder", alarm.getName(), pi);		
 		if (RemindMe.isVibrate()) {
 			n.defaults |= Notification.DEFAULT_VIBRATE;
 		}

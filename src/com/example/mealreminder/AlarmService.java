@@ -82,22 +82,19 @@ public class AlarmService extends IntentService {
 		if (c.moveToFirst()) {
 			long now = System.currentTimeMillis();
 			long time, diff;
-//			long count = c.getCount();
-//			double MAX = alarmId!=null && count>30 ? Util.MONTH : Util.YEAR; 
+
 			do {
 				i = new Intent(this, AlarmReceiver.class);
 				i.putExtra(AlarmMsg.COL_ID, c.getLong(c.getColumnIndex(AlarmMsg.COL_ID)));
 				i.putExtra(AlarmMsg.COL_ALARMID, c.getLong(c.getColumnIndex(AlarmMsg.COL_ALARMID)));
 				
 				pi = PendingIntent.getBroadcast(this, 0, i, PendingIntent.FLAG_UPDATE_CURRENT);
-//				pi = PendingIntent.getService(context, requestCode, intent, flags);
 
 				time = c.getLong(c.getColumnIndex(AlarmMsg.COL_DATETIME));
 				diff = time-now + (long)Util.MIN;
 				if (CREATE.equals(action)) {
 					if (diff > 0 && diff < Util.YEAR)
 						am.set(AlarmManager.RTC_WAKEUP, time, pi);
-					//am.setRepeating(AlarmManager.RTC_WAKEUP, triggerAtTime, interval, operation);
 					
 				} else if (CANCEL.equals(action)) {
 					am.cancel(pi);
