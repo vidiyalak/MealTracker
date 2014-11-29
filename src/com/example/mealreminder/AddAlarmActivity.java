@@ -39,6 +39,7 @@ public class AddAlarmActivity extends Activity {
 //	private static final String TAG = "AddAlarmActivity";
 	
 	private EditText msgEdit;
+	private EditText mealNoteEdit;
 	private CheckBox soundCb;
 	private DatePicker datePicker;
 	private TimePicker timePicker;
@@ -113,11 +114,7 @@ public class AddAlarmActivity extends Activity {
 	protected void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 		outState.putInt("vs", vs.getDisplayedChild());
-//		outState.putInt("date", datePicker.getDayOfMonth());
-//		outState.putInt("month", datePicker.getMonth());
-//		outState.putInt("year", datePicker.getYear());
 		outState.putInt("hour", timePicker.getCurrentHour());
-//		outState.putInt("min", timePicker.getCurrentMinute());
 		outState.putCharSequence("fromdate", fromdateText.getText());
 		outState.putCharSequence("todate", todateText.getText());
 		outState.putCharSequence("attime", attimeText.getText());
@@ -127,9 +124,7 @@ public class AddAlarmActivity extends Activity {
 	protected void onRestoreInstanceState(Bundle state) {
 		super.onRestoreInstanceState(state);
 		vs.setDisplayedChild(state.getInt("vs"));
-//		datePicker.updateDate(state.getInt("year"), state.getInt("month"), state.getInt("date"));
 		timePicker.setCurrentHour(state.getInt("hour"));
-//		timePicker.setCurrentMinute(state.getInt("min"));
 		fromdateText.setText(state.getCharSequence("fromdate"));
 		todateText.setText(state.getCharSequence("todate"));
 		attimeText.setText(state.getCharSequence("attime"));
@@ -143,6 +138,7 @@ public class AddAlarmActivity extends Activity {
 
 	private void findViews() {
 		msgEdit = (EditText) findViewById(R.id.msg_et);
+		mealNoteEdit = (EditText) findViewById(R.id.meal_note);
 		soundCb = (CheckBox) findViewById(R.id.sound_cb);
 		datePicker = (DatePicker) findViewById(R.id.datePicker);
 		timePicker = (TimePicker) findViewById(R.id.timePicker);
@@ -170,6 +166,7 @@ public class AddAlarmActivity extends Activity {
 			Toast.makeText(this, "Enter a message", Toast.LENGTH_SHORT).show();
 			return false;
 		}
+		
 		if (vs.getDisplayedChild() == 1) {
 			if (TextUtils.isEmpty(fromdateText.getText())) {
 				Toast.makeText(this, "Specify from date", Toast.LENGTH_SHORT).show();
