@@ -22,5 +22,8 @@
     <string name="activityLevel2">"Lightly active\nExercise or sports 1 to 3 times a week"</string>
     <string name="activityLevel3">"Moderately active\nExercise or sports 3 to 5 times a week"</string>
     <string name="activityLevel4">"Very active\nExercise or sports 6 to 7 times a week"</string>
+    <string name="tall">"Height (feet and inches)"</string>
+    <string name="age">"What is your age?"</string>
+    <string name="weight">"Weight (in pounds)"</string>
 
 </resources>

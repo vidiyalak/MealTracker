@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
         android:text="What is your activity level?" />
 
     <RadioGroup
@@ -24,14 +25,14 @@
         android:layout_alignRight="@+id/textView1"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="40dp"
-        android:layout_marginRight="50dp" >
+        >
 
         <RadioButton
             android:id="@+id/radio0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="Sedentary" />
+            android:text="@string/activityLevel1" />
 
         <RadioButton
             android:id="@+id/radio1"
@@ -39,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:onClick="onRadioButtonClicked"
-            android:text="Light" />
+            android:text="@string/activityLevel2" />
 
         <RadioButton
             android:id="@+id/radio2"
@@ -47,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:onClick="onRadioButtonClicked"
-            android:text="Moderate" />
+            android:text="@string/activityLevel3" />
         
         <RadioButton
             android:id="@+id/radio3"
@@ -55,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:onClick="onRadioButtonClicked"
-            android:text="Active" />
+            android:text="@string/activityLevel4" />
     </RadioGroup>
 
 </RelativeLayout>
