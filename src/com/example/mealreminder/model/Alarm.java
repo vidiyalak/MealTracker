@@ -16,7 +16,6 @@ public class Alarm extends AbstractModel {
 	public static final String COL_CREATEDTIME = "created_time";
 	public static final String COL_MODIFIEDTIME = "modified_time";
 	public static final String COL_NAME = "name";
-	public static final String COL_MEALNOTE = "note";
 	public static final String COL_FROMDATE = "from_date";
 	public static final String COL_TODATE = "to_date";
 	public static final String COL_RULE = "rule";
@@ -33,7 +32,6 @@ public class Alarm extends AbstractModel {
 				COL_CREATEDTIME, " INTEGER, ",
 				COL_MODIFIEDTIME, " INTEGER, ",
 				COL_NAME, " TEXT, ",
-				COL_MEALNOTE, " TEXT, ",
 				COL_FROMDATE, " DATE, ",
 				COL_TODATE, " DATE, ",
 				COL_RULE, " TEXT, ",				
@@ -48,7 +46,6 @@ public class Alarm extends AbstractModel {
 		cv.put(COL_CREATEDTIME, now);
 		cv.put(COL_MODIFIEDTIME, now);
 		cv.put(COL_NAME, name==null ? "" : name);
-		cv.put(COL_MEALNOTE, note==null ? "" : note);
 		cv.put(COL_FROMDATE, fromDate);
 		cv.put(COL_TODATE, toDate);
 		cv.put(COL_RULE, rule);
@@ -64,8 +61,6 @@ public class Alarm extends AbstractModel {
 		cv.put(COL_MODIFIEDTIME, System.currentTimeMillis());
 		if (name != null)
 			cv.put(COL_NAME, name);
-		if (note != null)
-			cv.put(COL_MEALNOTE, note);
 		if (fromDate != null)
 			cv.put(COL_FROMDATE, fromDate);
 		if (toDate != null)
@@ -90,7 +85,6 @@ public class Alarm extends AbstractModel {
 				createdTime = cursor.getLong(cursor.getColumnIndex(COL_CREATEDTIME));
 				modifiedTime = cursor.getLong(cursor.getColumnIndex(COL_MODIFIEDTIME));
 				name = cursor.getString(cursor.getColumnIndex(COL_NAME));
-				note = cursor.getString(cursor.getColumnIndex(COL_MEALNOTE));
 				fromDate = cursor.getString(cursor.getColumnIndex(COL_FROMDATE));
 				toDate = cursor.getString(cursor.getColumnIndex(COL_TODATE));
 				rule = cursor.getString(cursor.getColumnIndex(COL_RULE));
@@ -132,7 +126,6 @@ public class Alarm extends AbstractModel {
 	private long createdTime;
 	private long modifiedTime;
 	private String name;
-	private String note;
 	private String fromDate;
 	private String toDate;
 	private String rule;
@@ -145,7 +138,6 @@ public class Alarm extends AbstractModel {
 		createdTime = 0;
 		modifiedTime = 0;
 		name = null;
-		note = null;
 		fromDate = null;
 		toDate = null;
 		rule = null;
@@ -171,12 +163,6 @@ public class Alarm extends AbstractModel {
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-	public String getNote() {
-		return note;
-	}
-	public void setNote(String note) {
-		this.note = note;
 	}
 	public String getFromDate() {
 		return fromDate;
