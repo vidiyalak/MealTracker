@@ -61,7 +61,7 @@ public class SixthActivity extends Activity {
 			    */
 			    TextView textView5 = (TextView) findViewById(R.id.textView1);
 			    //textView5.setTextSize(10);
-			    textView5.setText("You require: " + Math.round(caloriesRequired) + " calories.");	
+			    textView5.setText("You require " + Math.round(caloriesRequired) + " calories per day\n\n" + Math.round((caloriesRequired)*.55/4) + " grams of carbs\n\n" + Math.round((caloriesRequired)*.3/9) + " grams of fat\n\n" + Math.round((caloriesRequired)*.15/4) + " grams of protein");	
 			    SharedPreferences.Editor editor = settings.edit();
 			    editor.putInt("totalCalories", calorieRequired);
 			    editor.commit();

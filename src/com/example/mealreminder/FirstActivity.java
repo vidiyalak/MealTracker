@@ -230,7 +230,7 @@ public class FirstActivity extends ListActivity {
 			if(count == 0)//if list view is empty
 				count = -1;
 			SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
-			int totalCalories = settings.getInt("totalCalories", 10);
+			int totalCalories = settings.getInt("totalCalories", 10);//default value of 10 in case no value available
 			//create an alert dialog to display the number of calories per meal
 			AlertDialog ad = new AlertDialog.Builder(this).create();  
 			ad.setCancelable(false); // This blocks the 'BACK' button  
