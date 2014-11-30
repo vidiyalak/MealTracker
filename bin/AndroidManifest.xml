@@ -28,9 +28,12 @@
         </activity>
         <activity
             android:name="com.example.mealreminder.AddAlarmActivity"
-            android:windowSoftInputMode="stateHidden" >
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name="com.example.mealreminder.SettingsActivity" >
+        <activity 
+            android:name="com.example.mealreminder.SettingsActivity" 
+            android:screenOrientation="portrait">
         </activity>
 
         <receiver android:name="com.example.mealreminder.AlarmSetter" >
@@ -50,7 +53,8 @@
         </activity>
         <activity
             android:name="com.example.mealreminder.FirstActivity"
-            android:label="@string/title_activity_first" >
+            android:label="@string/title_activity_first" 
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.mealreminder.SecondActivity"
