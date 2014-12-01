@@ -42,7 +42,6 @@ import com.example.mealreminder.model.AlarmMsg;
 
 public class FirstActivity extends ListActivity {
 	
-//	private static final String TAG = "MainActivity";
 	
 	private TextView headingText;
 	private TextView rangeText;
@@ -133,13 +132,15 @@ public class FirstActivity extends ListActivity {
 		return null;
 	}
 	
+	@SuppressWarnings("deprecation")
 	private Cursor createCursor() {
 		Cursor c = RemindMe.dbHelper.listNotifications(db, cal.getTimeInMillis()+move(+1), cal.getTimeInMillis()+move(-1));
 		startManagingCursor(c);
 		return c;
 	}
     
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
 	protected void onResume() {
 		super.onResume();
 
@@ -148,7 +149,9 @@ public class FirstActivity extends ListActivity {
 				R.layout.row, 
 				createCursor(), 
 				new String[]{Alarm.COL_NAME, AlarmMsg.COL_DATETIME, AlarmMsg.COL_DATETIME, AlarmMsg.COL_DATETIME, AlarmMsg.COL_DATETIME}, 
-				new int[]{R.id.msg_tv, R.id.year_tv, R.id.month_tv, R.id.date_tv, R.id.time_tv});
+				new int[]{R.id.msg_tv, R.id.year_tv, R.id.month_tv, R.id.date_tv, R.id.time_tv},
+				0
+				);
 		
 		adapter.setViewBinder(new ViewBinder() {
 			@Override
@@ -206,6 +209,7 @@ public class FirstActivity extends ListActivity {
 		return "";
 	}    
     
+	@SuppressWarnings("deprecation")
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.imageButton1:
@@ -277,6 +281,7 @@ public class FirstActivity extends ListActivity {
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public boolean onContextItemSelected(MenuItem item) {
 		AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
