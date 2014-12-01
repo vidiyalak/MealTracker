@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
     
-    <PreferenceCategory android:title="Display Settings">
+    <!--  PreferenceCategory android:title="Display Settings">
         
 		
 		<ListPreference android:key="date_range"
@@ -23,7 +23,7 @@
 			android:summary="Use 24-hour format"
 			android:defaultValue="true" />				
 						
-	</PreferenceCategory>    
+	</PreferenceCategory-->    
     
 	<PreferenceCategory android:title="Notification Settings">
                         
@@ -38,11 +38,7 @@
             android:ringtoneType="all"
             android:showDefault="true"
             android:showSilent="false" />
-        
-        <!--Preference android:key="about_pref"
-            android:title="About"
-            android:summary="Credits" /-->            
-		
+        		
 	</PreferenceCategory>
     
 </PreferenceScreen>
