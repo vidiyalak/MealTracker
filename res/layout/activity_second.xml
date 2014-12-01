@@ -31,6 +31,9 @@
             android:id="@+id/radio0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/customradio" 
+            android:button="@android:color/transparent"
             android:onClick="onRadioButtonClicked"
             android:text="Lose Weight" />
 
@@ -39,6 +42,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:padding="5dp"
+            android:background="@drawable/customradio" 
+            android:button="@android:color/transparent"
             android:onClick="onRadioButtonClicked"
             android:text="Maintain Weight" />
 
@@ -47,6 +53,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:padding="5dp"
+            android:background="@drawable/customradio" 
+            android:button="@android:color/transparent"
             android:onClick="onRadioButtonClicked"
             android:text="Gain Weight" />
     </RadioGroup>
