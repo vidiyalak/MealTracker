@@ -3,12 +3,6 @@
     
     <PreferenceCategory android:title="Display Settings">
         
-		<ListPreference android:key="time_option"
-		    android:title="Display Time"
-		    android:summary="Actual"
-		    android:entries="@array/time_option_arr"
-			android:entryValues="@array/val_arr"
-			android:defaultValue="0" />
 		
 		<ListPreference android:key="date_range"
 		    android:title="Date Range"
