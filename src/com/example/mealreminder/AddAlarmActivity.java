@@ -39,7 +39,6 @@ public class AddAlarmActivity extends Activity {
 //	private static final String TAG = "AddAlarmActivity";
 	
 	private EditText msgEdit;
-	private EditText mealNoteEdit;
 	private CheckBox soundCb;
 	private DatePicker datePicker;
 	private TimePicker timePicker;
@@ -138,7 +137,6 @@ public class AddAlarmActivity extends Activity {
 
 	private void findViews() {
 		msgEdit = (EditText) findViewById(R.id.msg_et);
-		mealNoteEdit = (EditText) findViewById(R.id.meal_note);
 		soundCb = (CheckBox) findViewById(R.id.sound_cb);
 		datePicker = (DatePicker) findViewById(R.id.datePicker);
 		timePicker = (TimePicker) findViewById(R.id.timePicker);
@@ -163,7 +161,7 @@ public class AddAlarmActivity extends Activity {
 	private boolean validate() {
 		if (TextUtils.isEmpty(msgEdit.getText())) {
 			msgEdit.requestFocus();
-			Toast.makeText(this, "Enter a reminder name", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "Enter a meal note", Toast.LENGTH_SHORT).show();
 			return false;
 		}
 		
