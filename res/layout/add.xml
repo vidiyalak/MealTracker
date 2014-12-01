@@ -15,17 +15,9 @@
 	        android:layout_height="wrap_content"
 	        android:ems="10"
 	        android:maxLines="2"
-	        android:hint="Reminder Name" >
+	        android:hint="Meal Note" >
 	    </EditText>
 
-	    <EditText
-	        android:id="@+id/meal_note"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:ems="10"
-	        android:hint="Meal Note"
-	        android:maxLines="5" />
-	    
 	    <CheckBox
 	        android:id="@+id/sound_cb"
 	        android:layout_width="wrap_content"
@@ -73,7 +65,7 @@
 			    android:layout_height="wrap_content"
 			    android:background="@null"
 			    android:onClick="create"
-			    android:src="@drawable/ok" />	        
+			    android:src="@drawable/ok2" />	        
 	    </LinearLayout>	    
 	
 	</LinearLayout>
