@@ -31,14 +31,20 @@
             android:id="@+id/radio0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/customradio" 
+            android:button="@android:color/transparent"
             android:onClick="onRadioButtonClicked"
-            android:text="0.5 lbs" />
+            android:text="0.5 lb" />
 
         <RadioButton
             android:id="@+id/radio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:padding="5dp"
+            android:background="@drawable/customradio" 
+            android:button="@android:color/transparent"
             android:onClick="onRadioButtonClicked"
             android:text="1 lb" />
 
@@ -47,16 +53,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:padding="5dp"
+            android:background="@drawable/customradio" 
+            android:button="@android:color/transparent"
             android:onClick="onRadioButtonClicked"
-            android:text="1.5 lb" />
+            android:text="1.5 lbs" />
         
         <RadioButton
             android:id="@+id/radio3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:padding="5dp"
+            android:background="@drawable/customradio" 
+            android:button="@android:color/transparent"
             android:onClick="onRadioButtonClicked"
-            android:text="2 lb" />
+            android:text="2 lbs" />
         
     </RadioGroup>
 
