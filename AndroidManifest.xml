@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mealreminder"
+    package="com.trigg.alarmclock"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="20" />
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:name="com.example.mealreminder.RemindMe"
+        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/app_theme" >
+        android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.mealreminder.MainActivity"
-            android:label="@string/app_name" 
-            android:screenOrientation="portrait">
+            android:name=".AlarmListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".AlarmScreen" />
+        <activity android:name=".AlarmDetailsActivity" />
+
+        <service
+            android:name=".AlarmService"
+            android:enabled="true" />
+
+        <receiver android:name=".AlarmManagerHelper" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".FirstActivity"
+            android:label="@string/title_activity_first" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,69 +43,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.mealreminder.AddAlarmActivity"
-            android:windowSoftInputMode="stateHidden" 
-            android:screenOrientation="portrait">
-        </activity>
-        <activity 
-            android:name="com.example.mealreminder.SettingsActivity" 
-            android:screenOrientation="portrait">
-        </activity>
-
-        <receiver android:name="com.example.mealreminder.AlarmSetter" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-        <receiver android:name="com.example.mealreminder.AlarmReceiver" >
-        </receiver>
-
-        <service android:name="com.example.mealreminder.AlarmService" >
-        </service>
-
-        <activity
-            android:name="com.example.mealreminder.Welcome"
-            android:label="@string/title_activity_welcome" >
+            android:name=".SecondActivity"
+            android:label="@string/title_activity_second" >
         </activity>
         <activity
-            android:name="com.example.mealreminder.FirstActivity"
-            android:label="@string/title_activity_first" 
-            android:screenOrientation="portrait" >
+            android:name=".ThirdActivity"
+            android:label="@string/title_activity_third" >
         </activity>
         <activity
-            android:name="com.example.mealreminder.SecondActivity"
-            android:label="@string/title_activity_second" 
-            android:screenOrientation="portrait">
+            android:name=".LoseWeight"
+            android:label="@string/title_activity_lose_weight" >
         </activity>
         <activity
-            android:name="com.example.mealreminder.ThirdActivity"
-            android:label="@string/title_activity_third" 
-            android:screenOrientation="portrait">
+            android:name=".GainWeight"
+            android:label="@string/title_activity_gain_weight" >
         </activity>
         <activity
-            android:name="com.example.mealreminder.LoseWeight"
-            android:label="@string/title_activity_lose_weight" 
-            android:screenOrientation="portrait">
+            android:name=".FourthActivity"
+            android:label="@string/title_activity_fourth" >
         </activity>
         <activity
-            android:name="com.example.mealreminder.GainWeight"
-            android:label="@string/title_activity_gain_weight" 
-            android:screenOrientation="portrait">
+            android:name=".FifthActivity"
+            android:label="@string/title_activity_fifth" >
         </activity>
         <activity
-            android:name="com.example.mealreminder.FourthActivity"
-            android:label="@string/title_activity_fourth" 
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name="com.example.mealreminder.FifthActivity"
-            android:label="@string/title_activity_fifth" 
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name="com.example.mealreminder.SixthActivity"
-            android:label="@string/title_activity_sixth" 
-            android:screenOrientation="portrait">
+            android:name=".SixthActivity"
+            android:label="@string/title_activity_sixth" >
         </activity>
     </application>
 

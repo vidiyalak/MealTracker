@@ -6,9 +6,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.mealreminder.FourthActivity" >
+    android:background="#e5e5e5"
+    tools:context="com.trigg.alarmclock.FourthActivity" >
 
-	<RadioGroup
+    <RadioGroup
         android:id="@+id/radioGroup1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,8 +47,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="Gender"
-        android:textColor="#FFFFFF"
+        android:text="You are"
+        android:textColor="#262626"
         android:textSize="20sp" />
 
     <TextView
@@ -56,9 +57,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Age"
+        android:text="How old are you?"
         android:layout_marginBottom="30dp"
-        android:textColor="#FFFFFF"
+        android:textColor="#262626"
         android:textSize="20sp"
          />
 
@@ -90,7 +91,7 @@
         android:layout_marginTop="58dp"
         android:text="Age::"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#FFFFFF" />
+        android:textColor="#262626" />
 
     <ProgressBar
         android:id="@+id/progressBar1"
@@ -102,5 +103,4 @@
         android:progress="68"        
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true" />
-    
 </RelativeLayout>

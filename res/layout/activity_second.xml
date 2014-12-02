@@ -6,7 +6,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.mealreminder.SecondActivity" >
+    android:background="#e5e5e5"
+    tools:context="com.trigg.alarmclock.SecondActivity" >
 
     <TextView
         android:id="@+id/textView1"
@@ -16,7 +17,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="What is your goal?"
-        android:textColor="#FFFFFF"
+        android:textColor="#262626"
         android:textSize="20sp" />
 
     <RadioGroup
