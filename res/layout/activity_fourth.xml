@@ -92,4 +92,15 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="#FFFFFF" />
 
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="5dp"
+        android:minWidth="220dp"
+        android:progress="68"        
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+    
 </RelativeLayout>
