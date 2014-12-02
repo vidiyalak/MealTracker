@@ -18,6 +18,7 @@
         android:layout_marginBottom="100dp"
         android:background="@drawable/rounded_blue"
         android:textColor="#ffffff"
+        android:padding="5dp"
         android:onClick="goToCalories"
         android:text="Calculate Calories" />
 
@@ -43,6 +44,7 @@
         android:layout_marginBottom="30dp"
         android:background="@drawable/rounded_blue"
         android:textColor="#ffffff"
+        android:padding="5dp"
         android:onClick="goToAlarms"
         android:text="Set Alarms" />
 
