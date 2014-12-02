@@ -98,13 +98,7 @@
 	        android:text="S"
 	        android:textAppearance="?android:attr/textAppearanceSmall" />
 
-	    <ToggleButton
-	        android:id="@+id/alarm_item_toggle"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignParentRight="true"
-	        android:layout_alignParentTop="true"
-	        android:text="ToggleButton" />
+
 	        
 	</RelativeLayout>
    
