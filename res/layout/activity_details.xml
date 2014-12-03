@@ -50,7 +50,7 @@
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:ems="20"
-            android:maxLength="100"
+            android:maxLength="110"
             android:hint="Meal Note" />
 
         <View

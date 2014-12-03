@@ -33,12 +33,16 @@ public class AlarmScreen extends Activity {
 		this.setContentView(R.layout.activity_alarm_screen);
 
 		String name = getIntent().getStringExtra(AlarmManagerHelper.NAME);
+		String note = getIntent().getStringExtra(AlarmManagerHelper.NOTE);
 		int timeHour = getIntent().getIntExtra(AlarmManagerHelper.TIME_HOUR, 0);
 		int timeMinute = getIntent().getIntExtra(AlarmManagerHelper.TIME_MINUTE, 0);
 		String tone = getIntent().getStringExtra(AlarmManagerHelper.TONE);
 		
 		TextView tvName = (TextView) findViewById(R.id.alarm_screen_name);
 		tvName.setText(name);
+		
+		TextView tvNote = (TextView) findViewById(R.id.alarm_screen_note);
+		tvNote.setText(note);
 		
 		TextView tvTime = (TextView) findViewById(R.id.alarm_screen_time);
 		tvTime.setText(String.format("%02d : %02d", timeHour, timeMinute));
