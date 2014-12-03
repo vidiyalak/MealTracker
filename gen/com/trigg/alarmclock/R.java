@@ -42,10 +42,10 @@ public final class R {
         public static final int view_touch_selector=0x7f02000a;
     }
     public static final class id {
-        public static final int action_add_new_alarm=0x7f090033;
-        public static final int action_save_alarm_details=0x7f090032;
-        public static final int action_settings=0x7f090035;
-        public static final int action_show_calories=0x7f090034;
+        public static final int action_add_new_alarm=0x7f090032;
+        public static final int action_save_alarm_details=0x7f090031;
+        public static final int action_settings=0x7f090034;
+        public static final int action_show_calories=0x7f090033;
         public static final int ageSeekBar=0x7f090021;
         public static final int ageTextView=0x7f090022;
         public static final int alarm_details_name=0x7f090005;
@@ -61,7 +61,6 @@ public final class R {
         public static final int alarm_item_friday=0x7f09002b;
         public static final int alarm_item_monday=0x7f090027;
         public static final int alarm_item_name=0x7f09002d;
-        public static final int alarm_item_note=0x7f09002e;
         public static final int alarm_item_saturday=0x7f09002c;
         public static final int alarm_item_sunday=0x7f090026;
         public static final int alarm_item_thursday=0x7f09002a;
@@ -77,9 +76,9 @@ public final class R {
         public static final int alarm_screen_title=0x7f090000;
         public static final int button1=0x7f09001a;
         public static final int button2=0x7f09001d;
-        public static final int custom_switch_button=0x7f090030;
-        public static final int custom_switch_label=0x7f090031;
-        public static final int custom_switch_layout=0x7f09002f;
+        public static final int custom_switch_button=0x7f09002f;
+        public static final int custom_switch_label=0x7f090030;
+        public static final int custom_switch_layout=0x7f09002e;
         public static final int divider1=0x7f090008;
         public static final int divider2=0x7f090006;
         public static final int divider3=0x7f090014;

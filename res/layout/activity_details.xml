@@ -39,9 +39,9 @@
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:ems="20"
-            android:maxLength="23"
-            android:hint="@string/details_alarm_name" />
-
+            android:maxLength="110"
+            android:hint="Meal Note" />
+        
         <View
             android:id="@+id/divider2"
             style="@style/Divider"
