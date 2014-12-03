@@ -6,7 +6,9 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
@@ -44,7 +46,33 @@ public class AlarmListActivity extends ListActivity {
 		switch (item.getItemId()) {
 			case R.id.action_show_calories: {
 				//do show calories here
-				
+				//get the number of items in the list view that represents number of meals
+				int count = getListView().getChildCount();
+				if(count == 0)//if list view is empty
+					count = -1;
+				SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+				int totalCalories = settings.getInt("totalCalories", 10);//default value of 10 in case no value available
+				//create an alert dialog to display the number of calories per meal
+				AlertDialog ad = new AlertDialog.Builder(this).create();  
+				ad.setCancelable(false); // This blocks the 'BACK' button  
+				if(count != -1)
+				{
+					ad.setTitle("Calories Per Meal");
+					ad.setMessage("You require " + totalCalories/count + " calories per meal\n" + Math.round((totalCalories/count)*.55/4) + " grams of carbs\n" + Math.round((totalCalories/count)*.3/9) + " grams of fat\n" + Math.round((totalCalories/count)*.15/4) + " grams of protein");
+				}
+				else if(count == -1)
+				{
+					ad.setTitle("Calories Per Day");
+					ad.setMessage("You require " + totalCalories + " calories per day\n" + Math.round((totalCalories)*.55/4) + " grams of carbs\n" + Math.round((totalCalories)*.3/9) + " grams of fat\n" + Math.round((totalCalories)*.15/4) + " grams of protein");
+				}
+				//ad.setTitle("Calories Per Meal");
+				ad.setButton("OK", new DialogInterface.OnClickListener() {  
+				    @Override  
+				    public void onClick(DialogInterface dialog, int which) {  
+				        dialog.dismiss();                      
+				    }  
+				});  
+				ad.show(); 
 				break;
 			}
 			
