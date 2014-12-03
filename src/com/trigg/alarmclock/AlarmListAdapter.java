@@ -68,9 +68,6 @@ public class AlarmListAdapter extends BaseAdapter {
 		
 		TextView txtName = (TextView) view.findViewById(R.id.alarm_item_name);
 		txtName.setText(model.name);
-		
-		TextView txtNote = (TextView) view.findViewById(R.id.alarm_item_note);
-		txtNote.setText(model.note);
 
 		updateTextColor((TextView) view.findViewById(R.id.alarm_item_sunday), model.getRepeatingDay(AlarmModel.SUNDAY));
 		updateTextColor((TextView) view.findViewById(R.id.alarm_item_monday), model.getRepeatingDay(AlarmModel.MONDAY));

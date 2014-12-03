@@ -19,7 +19,6 @@ public class AlarmModel {
 	public boolean repeatWeekly;
 	public Uri alarmTone;
 	public String name;
-	public String note;
 	public boolean isEnabled;
 	
 	public AlarmModel() {
