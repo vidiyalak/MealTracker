@@ -18,25 +18,13 @@
 	        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 	    <TextView
-	        android:id="@+id/alarm_item_name"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignBottom="@+id/alarm_item_time"
-	        android:layout_marginLeft="8dp"
-	        android:layout_marginRight="8dp"
-	        android:layout_toLeftOf="@+id/alarm_item_toggle"
-	        android:layout_toRightOf="@+id/alarm_item_time"
-	        android:text="Medium Text"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-	    <TextView
 	        android:id="@+id/alarm_item_sunday"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_alignParentLeft="true"
 	        android:layout_below="@+id/alarm_item_time"
 	        android:text="S"
-	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 	    <TextView
 	        android:id="@+id/alarm_item_monday"
@@ -46,7 +34,7 @@
 	        android:layout_below="@+id/alarm_item_time"
 	        android:layout_marginLeft="4dp"
 	        android:text="M"
-	        android:textAppearance="?android:attr/textAppearanceSmall" /> 
+	        android:textAppearance="?android:attr/textAppearanceMedium" /> 
 	        
 	    <TextView
 	        android:id="@+id/alarm_item_tuesday"
@@ -56,7 +44,7 @@
 	        android:layout_below="@+id/alarm_item_time"
 	        android:layout_marginLeft="4dp"
 	        android:text="T"
-	        android:textAppearance="?android:attr/textAppearanceSmall" /> 
+	        android:textAppearance="?android:attr/textAppearanceMedium" /> 
 	        
 	    <TextView
 	        android:id="@+id/alarm_item_wednesday"
@@ -66,7 +54,7 @@
 	        android:layout_below="@+id/alarm_item_time"
 	        android:layout_marginLeft="4dp"
 	        android:text="W"
-	        android:textAppearance="?android:attr/textAppearanceSmall" /> 
+	        android:textAppearance="?android:attr/textAppearanceMedium" /> 
 	        
 	    <TextView
 	        android:id="@+id/alarm_item_thursday"
@@ -76,7 +64,7 @@
 	        android:layout_below="@+id/alarm_item_time"
 	        android:layout_marginLeft="4dp"
 	        android:text="T"
-	        android:textAppearance="?android:attr/textAppearanceSmall" /> 
+	        android:textAppearance="?android:attr/textAppearanceMedium" /> 
 	        
 	    <TextView
 	        android:id="@+id/alarm_item_friday"
@@ -86,7 +74,7 @@
 	        android:layout_below="@+id/alarm_item_time"
 	        android:layout_marginLeft="4dp"
 	        android:text="F"
-	        android:textAppearance="?android:attr/textAppearanceSmall" /> 
+	        android:textAppearance="?android:attr/textAppearanceMedium" /> 
 	        
 	    <TextView
 	        android:id="@+id/alarm_item_saturday"
@@ -95,10 +83,33 @@
 	        android:layout_toRightOf="@+id/alarm_item_friday"
 	        android:layout_below="@+id/alarm_item_time"
 	        android:layout_marginLeft="4dp"
-	        android:text="S"
-	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	        android:text="S  "
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
 
+	    <TextView
+	        android:id="@+id/alarm_item_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/alarm_item_time"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginRight="16dp"
+	        android:layout_toRightOf="@+id/alarm_item_saturday"
+	        android:lines="1"
+	        android:text="Large Text"
+	        android:maxLength="23"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
 
+	    <TextView
+	        android:id="@+id/alarm_item_note"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/alarm_item_name"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/alarm_item_name"
+	        android:layout_marginRight="16dp"
+	        android:text="Medium Text"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
 	        
 	</RelativeLayout>
    
