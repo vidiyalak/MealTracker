@@ -40,13 +40,24 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:ems="20"
             android:maxLength="23"
-            android:hint="@string/details_alarm_name" />
+            android:hint="Reminder Name" />
+        
+        <EditText
+            android:id="@+id/alarm_details_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alarm_details_name"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:ems="20"
+            android:maxLength="100"
+            android:hint="Meal Note" />
 
         <View
             android:id="@+id/divider2"
             style="@style/Divider"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/alarm_details_name" />
+            android:layout_below="@+id/alarm_details_note" />
 
         <com.trigg.alarmclock.CustomSwitch
             android:id="@+id/alarm_details_repeat_weekly"

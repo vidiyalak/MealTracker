@@ -20,6 +20,7 @@ public class AlarmDBHelper extends SQLiteOpenHelper {
 	private static final String SQL_CREATE_ALARM = "CREATE TABLE " + Alarm.TABLE_NAME + " (" +
 			Alarm._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
 			Alarm.COLUMN_NAME_ALARM_NAME + " TEXT," +
+			Alarm.COLUMN_NAME_ALARM_NOTE + " TEXT," +
 			Alarm.COLUMN_NAME_ALARM_TIME_HOUR + " INTEGER," +
 			Alarm.COLUMN_NAME_ALARM_TIME_MINUTE + " INTEGER," +
 			Alarm.COLUMN_NAME_ALARM_REPEAT_DAYS + " TEXT," +
@@ -50,6 +51,7 @@ public class AlarmDBHelper extends SQLiteOpenHelper {
 		AlarmModel model = new AlarmModel();
 		model.id = c.getLong(c.getColumnIndex(Alarm._ID));
 		model.name = c.getString(c.getColumnIndex(Alarm.COLUMN_NAME_ALARM_NAME));
+		model.note = c.getString(c.getColumnIndex(Alarm.COLUMN_NAME_ALARM_NOTE));
 		model.timeHour = c.getInt(c.getColumnIndex(Alarm.COLUMN_NAME_ALARM_TIME_HOUR));
 		model.timeMinute = c.getInt(c.getColumnIndex(Alarm.COLUMN_NAME_ALARM_TIME_MINUTE));
 		model.repeatWeekly = c.getInt(c.getColumnIndex(Alarm.COLUMN_NAME_ALARM_REPEAT_WEEKLY)) == 0 ? false : true;
@@ -67,6 +69,7 @@ public class AlarmDBHelper extends SQLiteOpenHelper {
 	private ContentValues populateContent(AlarmModel model) {
 		ContentValues values = new ContentValues();
         values.put(Alarm.COLUMN_NAME_ALARM_NAME, model.name);
+        values.put(Alarm.COLUMN_NAME_ALARM_NOTE, model.note);
         values.put(Alarm.COLUMN_NAME_ALARM_TIME_HOUR, model.timeHour);
         values.put(Alarm.COLUMN_NAME_ALARM_TIME_MINUTE, model.timeMinute);
         values.put(Alarm.COLUMN_NAME_ALARM_REPEAT_WEEKLY, model.repeatWeekly);

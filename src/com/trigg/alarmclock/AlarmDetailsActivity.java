@@ -22,6 +22,7 @@ public class AlarmDetailsActivity extends Activity {
 	
 	private TimePicker timePicker;
 	private EditText edtName;
+	private EditText edtNote;
 	private CustomSwitch chkWeekly;
 	private CustomSwitch chkSunday;
 	private CustomSwitch chkMonday;
@@ -45,6 +46,7 @@ public class AlarmDetailsActivity extends Activity {
 		
 		timePicker = (TimePicker) findViewById(R.id.alarm_details_time_picker);
 		edtName = (EditText) findViewById(R.id.alarm_details_name);
+		edtNote = (EditText) findViewById(R.id.alarm_details_note);
 		chkWeekly = (CustomSwitch) findViewById(R.id.alarm_details_repeat_weekly);
 		chkSunday = (CustomSwitch) findViewById(R.id.alarm_details_repeat_sunday);
 		chkMonday = (CustomSwitch) findViewById(R.id.alarm_details_repeat_monday);
@@ -66,6 +68,7 @@ public class AlarmDetailsActivity extends Activity {
 			timePicker.setCurrentHour(alarmDetails.timeHour);
 			
 			edtName.setText(alarmDetails.name);
+			edtNote.setText(alarmDetails.note);
 			
 			chkWeekly.setChecked(alarmDetails.repeatWeekly);
 			chkSunday.setChecked(alarmDetails.getRepeatingDay(AlarmModel.SUNDAY));
@@ -147,6 +150,7 @@ public class AlarmDetailsActivity extends Activity {
 		alarmDetails.timeMinute = timePicker.getCurrentMinute().intValue();
 		alarmDetails.timeHour = timePicker.getCurrentHour().intValue();
 		alarmDetails.name = edtName.getText().toString();
+		alarmDetails.note = edtNote.getText().toString();
 		alarmDetails.repeatWeekly = chkWeekly.isChecked();	
 		alarmDetails.setRepeatingDay(AlarmModel.SUNDAY, chkSunday.isChecked());	
 		alarmDetails.setRepeatingDay(AlarmModel.MONDAY, chkMonday.isChecked());	
