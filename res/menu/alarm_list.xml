@@ -1,9 +1,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-
-    <item
+        <item
         android:id="@+id/action_add_new_alarm"
         android:orderInCategory="100"
+        android:title="add"
         android:icon="@drawable/action_bar_add"
         android:showAsAction="always"/>
+        
+	<item
+        android:id="@+id/action_show_calories"
+        android:orderInCategory="100"
+        android:title="calculator"
+        android:icon="@drawable/calculator"
+        android:showAsAction="always"/>
+
+    
 
 </menu>

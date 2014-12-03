@@ -42,10 +42,17 @@ public class AlarmListActivity extends ListActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 
 		switch (item.getItemId()) {
+			case R.id.action_show_calories: {
+				//do show calories here
+				
+				break;
+			}
+			
 			case R.id.action_add_new_alarm: {
 				startAlarmDetailsActivity(-1);
 				break;
 			}
+			
 		}
 
 		return super.onOptionsItemSelected(item);
