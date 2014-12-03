@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/rounded_blue"
+        android:background="@drawable/blue_button"
         android:textColor="#ffffff"
         android:layout_marginBottom="32dp"
         android:onClick="sendMessage"
