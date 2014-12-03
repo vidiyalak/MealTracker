@@ -35,7 +35,8 @@
 
         <activity
             android:name=".FirstActivity"
-            android:label="@string/title_activity_first" >
+            android:label="@string/title_activity_first" 
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,31 +45,38 @@
         </activity>
         <activity
             android:name=".SecondActivity"
-            android:label="@string/title_activity_second" >
+            android:label="@string/title_activity_second" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".ThirdActivity"
-            android:label="@string/title_activity_third" >
+            android:label="@string/title_activity_third" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".LoseWeight"
-            android:label="@string/title_activity_lose_weight" >
+            android:label="@string/title_activity_lose_weight" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".GainWeight"
-            android:label="@string/title_activity_gain_weight" >
+            android:label="@string/title_activity_gain_weight" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".FourthActivity"
-            android:label="@string/title_activity_fourth" >
+            android:label="@string/title_activity_fourth" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".FifthActivity"
-            android:label="@string/title_activity_fifth" >
+            android:label="@string/title_activity_fifth" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".SixthActivity"
-            android:label="@string/title_activity_sixth" >
+            android:label="@string/title_activity_sixth" 
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
