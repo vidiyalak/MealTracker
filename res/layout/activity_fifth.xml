@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/bg_repeat"
-    tools:context="com.trigg.alarmclock.FifthActivity" >
+    tools:context="com.heartbleed.mealtracker.FifthActivity" >
 
     <LinearLayout
         android:id="@+id/linearLayout1"

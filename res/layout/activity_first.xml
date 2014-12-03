@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/apple"
-    tools:context="com.trigg.alarmclock.FirstActivity" >
+    tools:context="com.heartbleed.mealtracker.FirstActivity" >
 
     <Button
         android:id="@+id/button1"
