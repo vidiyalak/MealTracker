@@ -80,6 +80,11 @@ public class AlarmListActivity extends ListActivity {
 				startAlarmDetailsActivity(-1);
 				break;
 			}
+			case R.id.action_go_gome: {
+				//////////
+				Intent intent = new Intent(this, FirstActivity.class);
+				startActivity(intent);
+			}
 			
 		}
 

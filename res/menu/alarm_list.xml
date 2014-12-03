@@ -12,7 +12,13 @@
         android:title="calculator"
         android:icon="@drawable/calculator"
         android:showAsAction="always"/>
-
+	
+	<item
+        android:id="@+id/action_go_gome"
+        android:orderInCategory="100"
+        android:title="home"
+        android:icon="@drawable/ic_launcher_home"
+        android:showAsAction="always"/>
     
 
 </menu>

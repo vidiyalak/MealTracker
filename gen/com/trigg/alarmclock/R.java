@@ -37,14 +37,16 @@ public final class R {
         public static final int customradio=0x7f020005;
         public static final int holo_pressed_blue=0x7f020006;
         public static final int ic_launcher=0x7f020007;
-        public static final int restaurant_icons=0x7f020008;
-        public static final int rounded_blue=0x7f020009;
-        public static final int view_touch_selector=0x7f02000a;
+        public static final int ic_launcher_home=0x7f020008;
+        public static final int restaurant_icons=0x7f020009;
+        public static final int rounded_blue=0x7f02000a;
+        public static final int view_touch_selector=0x7f02000b;
     }
     public static final class id {
         public static final int action_add_new_alarm=0x7f090032;
+        public static final int action_go_gome=0x7f090034;
         public static final int action_save_alarm_details=0x7f090031;
-        public static final int action_settings=0x7f090034;
+        public static final int action_settings=0x7f090035;
         public static final int action_show_calories=0x7f090033;
         public static final int ageSeekBar=0x7f090021;
         public static final int ageTextView=0x7f090022;
