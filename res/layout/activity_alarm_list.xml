@@ -14,11 +14,11 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />
     
-    	<TextView android:id="@android:id/empty"
+    	<!--  TextView android:id="@android:id/empty"
 		          android:layout_width="fill_parent"
 		          android:layout_height="fill_parent"
 		          android:gravity="center"
 		          android:textColor="#777777"
-		          android:text="No Reminder" />
+		          android:text="No Reminder" /-->
     
 </RelativeLayout>
