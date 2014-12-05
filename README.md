@@ -9,4 +9,6 @@ This app calculates calories of the user based on information like age, gender, 
 
 The apk file for the latest version can be accessed using the link
 
+Compatible for version Android 4.0 and above
+
 https://drive.google.com/file/d/0BwJ8E8TeXN6xemhUZ0JHeGIyUzg/view?usp=sharing
